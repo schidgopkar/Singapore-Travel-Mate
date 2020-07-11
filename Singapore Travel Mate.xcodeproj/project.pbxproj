@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		18D922EB35089642E9876D98 /* Pods_Singapore_Travel_Mate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 128E37128356071B2FA14C72 /* Pods_Singapore_Travel_Mate.framework */; };
+		32F6E0712CAE6F00A4B18C83 /* Pods_Singapore_Travel_Mate_Singapore_Travel_MateUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0566F44E3446C78C13D8C9E /* Pods_Singapore_Travel_Mate_Singapore_Travel_MateUITests.framework */; };
 		47CFB56B24B9F09D000F20FF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 47CFB56A24B9F09D000F20FF /* AppDelegate.m */; };
 		47CFB56E24B9F09D000F20FF /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 47CFB56D24B9F09D000F20FF /* SceneDelegate.m */; };
 		47CFB57124B9F09D000F20FF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 47CFB57024B9F09D000F20FF /* ViewController.m */; };
@@ -16,6 +18,7 @@
 		47CFB57C24B9F0A5000F20FF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 47CFB57B24B9F0A5000F20FF /* main.m */; };
 		47CFB58624B9F0A7000F20FF /* Singapore_Travel_MateTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 47CFB58524B9F0A7000F20FF /* Singapore_Travel_MateTests.m */; };
 		47CFB59124B9F0A7000F20FF /* Singapore_Travel_MateUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 47CFB59024B9F0A7000F20FF /* Singapore_Travel_MateUITests.m */; };
+		5C98C9C4A1B6B5EFCA675929 /* Pods_Singapore_Travel_MateTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDA9AAA9306869FF5CF49B0F /* Pods_Singapore_Travel_MateTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		128E37128356071B2FA14C72 /* Pods_Singapore_Travel_Mate.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Singapore_Travel_Mate.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		47CFB56624B9F09D000F20FF /* Singapore Travel Mate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Singapore Travel Mate.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		47CFB56924B9F09D000F20FF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		47CFB56A24B9F09D000F20FF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -54,6 +58,14 @@
 		47CFB58C24B9F0A7000F20FF /* Singapore Travel MateUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Singapore Travel MateUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		47CFB59024B9F0A7000F20FF /* Singapore_Travel_MateUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Singapore_Travel_MateUITests.m; sourceTree = "<group>"; };
 		47CFB59224B9F0A7000F20FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		601DE5D5BF92BF8B84AAA879 /* Pods-Singapore Travel Mate.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Singapore Travel Mate.debug.xcconfig"; path = "Target Support Files/Pods-Singapore Travel Mate/Pods-Singapore Travel Mate.debug.xcconfig"; sourceTree = "<group>"; };
+		669E2EDAE25B7475EB43487D /* Pods-Singapore Travel Mate-Singapore Travel MateUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Singapore Travel Mate-Singapore Travel MateUITests.debug.xcconfig"; path = "Target Support Files/Pods-Singapore Travel Mate-Singapore Travel MateUITests/Pods-Singapore Travel Mate-Singapore Travel MateUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		C0566F44E3446C78C13D8C9E /* Pods_Singapore_Travel_Mate_Singapore_Travel_MateUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Singapore_Travel_Mate_Singapore_Travel_MateUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC8A2E0E87E9B191A2E94214 /* Pods-Singapore Travel Mate-Singapore Travel MateUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Singapore Travel Mate-Singapore Travel MateUITests.release.xcconfig"; path = "Target Support Files/Pods-Singapore Travel Mate-Singapore Travel MateUITests/Pods-Singapore Travel Mate-Singapore Travel MateUITests.release.xcconfig"; sourceTree = "<group>"; };
+		DDA9AAA9306869FF5CF49B0F /* Pods_Singapore_Travel_MateTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Singapore_Travel_MateTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE397E75C69724BB54145144 /* Pods-Singapore Travel Mate.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Singapore Travel Mate.release.xcconfig"; path = "Target Support Files/Pods-Singapore Travel Mate/Pods-Singapore Travel Mate.release.xcconfig"; sourceTree = "<group>"; };
+		F3AB011A3DA6A159F0BF4466 /* Pods-Singapore Travel MateTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Singapore Travel MateTests.release.xcconfig"; path = "Target Support Files/Pods-Singapore Travel MateTests/Pods-Singapore Travel MateTests.release.xcconfig"; sourceTree = "<group>"; };
+		F40C28ACA6E853BBF6B28F24 /* Pods-Singapore Travel MateTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Singapore Travel MateTests.debug.xcconfig"; path = "Target Support Files/Pods-Singapore Travel MateTests/Pods-Singapore Travel MateTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +73,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18D922EB35089642E9876D98 /* Pods_Singapore_Travel_Mate.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,6 +81,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5C98C9C4A1B6B5EFCA675929 /* Pods_Singapore_Travel_MateTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,12 +89,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				32F6E0712CAE6F00A4B18C83 /* Pods_Singapore_Travel_Mate_Singapore_Travel_MateUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0C903F5E2AFAA1738071061E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				128E37128356071B2FA14C72 /* Pods_Singapore_Travel_Mate.framework */,
+				C0566F44E3446C78C13D8C9E /* Pods_Singapore_Travel_Mate_Singapore_Travel_MateUITests.framework */,
+				DDA9AAA9306869FF5CF49B0F /* Pods_Singapore_Travel_MateTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		165C8EADB1EEA307CEFAE7ED /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				601DE5D5BF92BF8B84AAA879 /* Pods-Singapore Travel Mate.debug.xcconfig */,
+				DE397E75C69724BB54145144 /* Pods-Singapore Travel Mate.release.xcconfig */,
+				669E2EDAE25B7475EB43487D /* Pods-Singapore Travel Mate-Singapore Travel MateUITests.debug.xcconfig */,
+				CC8A2E0E87E9B191A2E94214 /* Pods-Singapore Travel Mate-Singapore Travel MateUITests.release.xcconfig */,
+				F40C28ACA6E853BBF6B28F24 /* Pods-Singapore Travel MateTests.debug.xcconfig */,
+				F3AB011A3DA6A159F0BF4466 /* Pods-Singapore Travel MateTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		47CFB55D24B9F09C000F20FF = {
 			isa = PBXGroup;
 			children = (
@@ -88,6 +127,8 @@
 				47CFB58424B9F0A7000F20FF /* Singapore Travel MateTests */,
 				47CFB58F24B9F0A7000F20FF /* Singapore Travel MateUITests */,
 				47CFB56724B9F09D000F20FF /* Products */,
+				165C8EADB1EEA307CEFAE7ED /* Pods */,
+				0C903F5E2AFAA1738071061E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -144,9 +185,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 47CFB59524B9F0A7000F20FF /* Build configuration list for PBXNativeTarget "Singapore Travel Mate" */;
 			buildPhases = (
+				529B52AA5433EEB88687FAB9 /* [CP] Check Pods Manifest.lock */,
 				47CFB56224B9F09D000F20FF /* Sources */,
 				47CFB56324B9F09D000F20FF /* Frameworks */,
 				47CFB56424B9F09D000F20FF /* Resources */,
+				39EABCAC3A3EF6C4FB7FDBB5 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -161,6 +204,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 47CFB59824B9F0A7000F20FF /* Build configuration list for PBXNativeTarget "Singapore Travel MateTests" */;
 			buildPhases = (
+				00DC04DA597D344216AC5B08 /* [CP] Check Pods Manifest.lock */,
 				47CFB57D24B9F0A7000F20FF /* Sources */,
 				47CFB57E24B9F0A7000F20FF /* Frameworks */,
 				47CFB57F24B9F0A7000F20FF /* Resources */,
@@ -179,9 +223,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 47CFB59B24B9F0A7000F20FF /* Build configuration list for PBXNativeTarget "Singapore Travel MateUITests" */;
 			buildPhases = (
+				1F5560257F004FBBE0C15384 /* [CP] Check Pods Manifest.lock */,
 				47CFB58824B9F0A7000F20FF /* Sources */,
 				47CFB58924B9F0A7000F20FF /* Frameworks */,
 				47CFB58A24B9F0A7000F20FF /* Resources */,
+				1BBDED63FDC377BF7E798F30 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -261,6 +307,109 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		00DC04DA597D344216AC5B08 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Singapore Travel MateTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1BBDED63FDC377BF7E798F30 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Singapore Travel Mate-Singapore Travel MateUITests/Pods-Singapore Travel Mate-Singapore Travel MateUITests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Singapore Travel Mate-Singapore Travel MateUITests/Pods-Singapore Travel Mate-Singapore Travel MateUITests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Singapore Travel Mate-Singapore Travel MateUITests/Pods-Singapore Travel Mate-Singapore Travel MateUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1F5560257F004FBBE0C15384 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Singapore Travel Mate-Singapore Travel MateUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		39EABCAC3A3EF6C4FB7FDBB5 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Singapore Travel Mate/Pods-Singapore Travel Mate-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Singapore Travel Mate/Pods-Singapore Travel Mate-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Singapore Travel Mate/Pods-Singapore Travel Mate-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		529B52AA5433EEB88687FAB9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Singapore Travel Mate-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		47CFB56224B9F09D000F20FF /* Sources */ = {
@@ -437,6 +586,7 @@
 		};
 		47CFB59624B9F0A7000F20FF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 601DE5D5BF92BF8B84AAA879 /* Pods-Singapore Travel Mate.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -454,6 +604,7 @@
 		};
 		47CFB59724B9F0A7000F20FF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DE397E75C69724BB54145144 /* Pods-Singapore Travel Mate.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -471,6 +622,7 @@
 		};
 		47CFB59924B9F0A7000F20FF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F40C28ACA6E853BBF6B28F24 /* Pods-Singapore Travel MateTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -491,6 +643,7 @@
 		};
 		47CFB59A24B9F0A7000F20FF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F3AB011A3DA6A159F0BF4466 /* Pods-Singapore Travel MateTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -511,6 +664,7 @@
 		};
 		47CFB59C24B9F0A7000F20FF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 669E2EDAE25B7475EB43487D /* Pods-Singapore Travel Mate-Singapore Travel MateUITests.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = X4LU5V6TD3;
@@ -529,6 +683,7 @@
 		};
 		47CFB59D24B9F0A7000F20FF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CC8A2E0E87E9B191A2E94214 /* Pods-Singapore Travel Mate-Singapore Travel MateUITests.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = X4LU5V6TD3;
