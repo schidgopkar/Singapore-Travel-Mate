@@ -1,0 +1,590 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		47CFB56B24B9F09D000F20FF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 47CFB56A24B9F09D000F20FF /* AppDelegate.m */; };
+		47CFB56E24B9F09D000F20FF /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 47CFB56D24B9F09D000F20FF /* SceneDelegate.m */; };
+		47CFB57124B9F09D000F20FF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 47CFB57024B9F09D000F20FF /* ViewController.m */; };
+		47CFB57424B9F09D000F20FF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 47CFB57224B9F09D000F20FF /* Main.storyboard */; };
+		47CFB57624B9F0A5000F20FF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 47CFB57524B9F0A5000F20FF /* Assets.xcassets */; };
+		47CFB57924B9F0A5000F20FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 47CFB57724B9F0A5000F20FF /* LaunchScreen.storyboard */; };
+		47CFB57C24B9F0A5000F20FF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 47CFB57B24B9F0A5000F20FF /* main.m */; };
+		47CFB58624B9F0A7000F20FF /* Singapore_Travel_MateTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 47CFB58524B9F0A7000F20FF /* Singapore_Travel_MateTests.m */; };
+		47CFB59124B9F0A7000F20FF /* Singapore_Travel_MateUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 47CFB59024B9F0A7000F20FF /* Singapore_Travel_MateUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		47CFB58224B9F0A7000F20FF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 47CFB55E24B9F09C000F20FF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 47CFB56524B9F09D000F20FF;
+			remoteInfo = "Singapore Travel Mate";
+		};
+		47CFB58D24B9F0A7000F20FF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 47CFB55E24B9F09C000F20FF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 47CFB56524B9F09D000F20FF;
+			remoteInfo = "Singapore Travel Mate";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		47CFB56624B9F09D000F20FF /* Singapore Travel Mate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Singapore Travel Mate.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		47CFB56924B9F09D000F20FF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		47CFB56A24B9F09D000F20FF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		47CFB56C24B9F09D000F20FF /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		47CFB56D24B9F09D000F20FF /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		47CFB56F24B9F09D000F20FF /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		47CFB57024B9F09D000F20FF /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		47CFB57324B9F09D000F20FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		47CFB57524B9F0A5000F20FF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		47CFB57824B9F0A5000F20FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		47CFB57A24B9F0A5000F20FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		47CFB57B24B9F0A5000F20FF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		47CFB58124B9F0A7000F20FF /* Singapore Travel MateTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Singapore Travel MateTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		47CFB58524B9F0A7000F20FF /* Singapore_Travel_MateTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Singapore_Travel_MateTests.m; sourceTree = "<group>"; };
+		47CFB58724B9F0A7000F20FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		47CFB58C24B9F0A7000F20FF /* Singapore Travel MateUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Singapore Travel MateUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		47CFB59024B9F0A7000F20FF /* Singapore_Travel_MateUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Singapore_Travel_MateUITests.m; sourceTree = "<group>"; };
+		47CFB59224B9F0A7000F20FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		47CFB56324B9F09D000F20FF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		47CFB57E24B9F0A7000F20FF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		47CFB58924B9F0A7000F20FF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		47CFB55D24B9F09C000F20FF = {
+			isa = PBXGroup;
+			children = (
+				47CFB56824B9F09D000F20FF /* Singapore Travel Mate */,
+				47CFB58424B9F0A7000F20FF /* Singapore Travel MateTests */,
+				47CFB58F24B9F0A7000F20FF /* Singapore Travel MateUITests */,
+				47CFB56724B9F09D000F20FF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		47CFB56724B9F09D000F20FF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				47CFB56624B9F09D000F20FF /* Singapore Travel Mate.app */,
+				47CFB58124B9F0A7000F20FF /* Singapore Travel MateTests.xctest */,
+				47CFB58C24B9F0A7000F20FF /* Singapore Travel MateUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		47CFB56824B9F09D000F20FF /* Singapore Travel Mate */ = {
+			isa = PBXGroup;
+			children = (
+				47CFB56924B9F09D000F20FF /* AppDelegate.h */,
+				47CFB56A24B9F09D000F20FF /* AppDelegate.m */,
+				47CFB56C24B9F09D000F20FF /* SceneDelegate.h */,
+				47CFB56D24B9F09D000F20FF /* SceneDelegate.m */,
+				47CFB56F24B9F09D000F20FF /* ViewController.h */,
+				47CFB57024B9F09D000F20FF /* ViewController.m */,
+				47CFB57224B9F09D000F20FF /* Main.storyboard */,
+				47CFB57524B9F0A5000F20FF /* Assets.xcassets */,
+				47CFB57724B9F0A5000F20FF /* LaunchScreen.storyboard */,
+				47CFB57A24B9F0A5000F20FF /* Info.plist */,
+				47CFB57B24B9F0A5000F20FF /* main.m */,
+			);
+			path = "Singapore Travel Mate";
+			sourceTree = "<group>";
+		};
+		47CFB58424B9F0A7000F20FF /* Singapore Travel MateTests */ = {
+			isa = PBXGroup;
+			children = (
+				47CFB58524B9F0A7000F20FF /* Singapore_Travel_MateTests.m */,
+				47CFB58724B9F0A7000F20FF /* Info.plist */,
+			);
+			path = "Singapore Travel MateTests";
+			sourceTree = "<group>";
+		};
+		47CFB58F24B9F0A7000F20FF /* Singapore Travel MateUITests */ = {
+			isa = PBXGroup;
+			children = (
+				47CFB59024B9F0A7000F20FF /* Singapore_Travel_MateUITests.m */,
+				47CFB59224B9F0A7000F20FF /* Info.plist */,
+			);
+			path = "Singapore Travel MateUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		47CFB56524B9F09D000F20FF /* Singapore Travel Mate */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 47CFB59524B9F0A7000F20FF /* Build configuration list for PBXNativeTarget "Singapore Travel Mate" */;
+			buildPhases = (
+				47CFB56224B9F09D000F20FF /* Sources */,
+				47CFB56324B9F09D000F20FF /* Frameworks */,
+				47CFB56424B9F09D000F20FF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Singapore Travel Mate";
+			productName = "Singapore Travel Mate";
+			productReference = 47CFB56624B9F09D000F20FF /* Singapore Travel Mate.app */;
+			productType = "com.apple.product-type.application";
+		};
+		47CFB58024B9F0A7000F20FF /* Singapore Travel MateTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 47CFB59824B9F0A7000F20FF /* Build configuration list for PBXNativeTarget "Singapore Travel MateTests" */;
+			buildPhases = (
+				47CFB57D24B9F0A7000F20FF /* Sources */,
+				47CFB57E24B9F0A7000F20FF /* Frameworks */,
+				47CFB57F24B9F0A7000F20FF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				47CFB58324B9F0A7000F20FF /* PBXTargetDependency */,
+			);
+			name = "Singapore Travel MateTests";
+			productName = "Singapore Travel MateTests";
+			productReference = 47CFB58124B9F0A7000F20FF /* Singapore Travel MateTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		47CFB58B24B9F0A7000F20FF /* Singapore Travel MateUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 47CFB59B24B9F0A7000F20FF /* Build configuration list for PBXNativeTarget "Singapore Travel MateUITests" */;
+			buildPhases = (
+				47CFB58824B9F0A7000F20FF /* Sources */,
+				47CFB58924B9F0A7000F20FF /* Frameworks */,
+				47CFB58A24B9F0A7000F20FF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				47CFB58E24B9F0A7000F20FF /* PBXTargetDependency */,
+			);
+			name = "Singapore Travel MateUITests";
+			productName = "Singapore Travel MateUITests";
+			productReference = 47CFB58C24B9F0A7000F20FF /* Singapore Travel MateUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		47CFB55E24B9F09C000F20FF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1150;
+				ORGANIZATIONNAME = "Shrikant Chidgopkar";
+				TargetAttributes = {
+					47CFB56524B9F09D000F20FF = {
+						CreatedOnToolsVersion = 11.5;
+					};
+					47CFB58024B9F0A7000F20FF = {
+						CreatedOnToolsVersion = 11.5;
+						TestTargetID = 47CFB56524B9F09D000F20FF;
+					};
+					47CFB58B24B9F0A7000F20FF = {
+						CreatedOnToolsVersion = 11.5;
+						TestTargetID = 47CFB56524B9F09D000F20FF;
+					};
+				};
+			};
+			buildConfigurationList = 47CFB56124B9F09C000F20FF /* Build configuration list for PBXProject "Singapore Travel Mate" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 47CFB55D24B9F09C000F20FF;
+			productRefGroup = 47CFB56724B9F09D000F20FF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				47CFB56524B9F09D000F20FF /* Singapore Travel Mate */,
+				47CFB58024B9F0A7000F20FF /* Singapore Travel MateTests */,
+				47CFB58B24B9F0A7000F20FF /* Singapore Travel MateUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		47CFB56424B9F09D000F20FF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				47CFB57924B9F0A5000F20FF /* LaunchScreen.storyboard in Resources */,
+				47CFB57624B9F0A5000F20FF /* Assets.xcassets in Resources */,
+				47CFB57424B9F09D000F20FF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		47CFB57F24B9F0A7000F20FF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		47CFB58A24B9F0A7000F20FF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		47CFB56224B9F09D000F20FF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				47CFB57124B9F09D000F20FF /* ViewController.m in Sources */,
+				47CFB56B24B9F09D000F20FF /* AppDelegate.m in Sources */,
+				47CFB57C24B9F0A5000F20FF /* main.m in Sources */,
+				47CFB56E24B9F09D000F20FF /* SceneDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		47CFB57D24B9F0A7000F20FF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				47CFB58624B9F0A7000F20FF /* Singapore_Travel_MateTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		47CFB58824B9F0A7000F20FF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				47CFB59124B9F0A7000F20FF /* Singapore_Travel_MateUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		47CFB58324B9F0A7000F20FF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 47CFB56524B9F09D000F20FF /* Singapore Travel Mate */;
+			targetProxy = 47CFB58224B9F0A7000F20FF /* PBXContainerItemProxy */;
+		};
+		47CFB58E24B9F0A7000F20FF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 47CFB56524B9F09D000F20FF /* Singapore Travel Mate */;
+			targetProxy = 47CFB58D24B9F0A7000F20FF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		47CFB57224B9F09D000F20FF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				47CFB57324B9F09D000F20FF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		47CFB57724B9F0A5000F20FF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				47CFB57824B9F0A5000F20FF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		47CFB59324B9F0A7000F20FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		47CFB59424B9F0A7000F20FF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		47CFB59624B9F0A7000F20FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X4LU5V6TD3;
+				INFOPLIST_FILE = "Singapore Travel Mate/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.shrikantchidgopkar.psb.Singapore-Travel-Mate";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		47CFB59724B9F0A7000F20FF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X4LU5V6TD3;
+				INFOPLIST_FILE = "Singapore Travel Mate/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.shrikantchidgopkar.psb.Singapore-Travel-Mate";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		47CFB59924B9F0A7000F20FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X4LU5V6TD3;
+				INFOPLIST_FILE = "Singapore Travel MateTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.shrikantchidgopkar.psb.Singapore-Travel-MateTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Singapore Travel Mate.app/Singapore Travel Mate";
+			};
+			name = Debug;
+		};
+		47CFB59A24B9F0A7000F20FF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X4LU5V6TD3;
+				INFOPLIST_FILE = "Singapore Travel MateTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.shrikantchidgopkar.psb.Singapore-Travel-MateTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Singapore Travel Mate.app/Singapore Travel Mate";
+			};
+			name = Release;
+		};
+		47CFB59C24B9F0A7000F20FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X4LU5V6TD3;
+				INFOPLIST_FILE = "Singapore Travel MateUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.shrikantchidgopkar.psb.Singapore-Travel-MateUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Singapore Travel Mate";
+			};
+			name = Debug;
+		};
+		47CFB59D24B9F0A7000F20FF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X4LU5V6TD3;
+				INFOPLIST_FILE = "Singapore Travel MateUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.shrikantchidgopkar.psb.Singapore-Travel-MateUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Singapore Travel Mate";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		47CFB56124B9F09C000F20FF /* Build configuration list for PBXProject "Singapore Travel Mate" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				47CFB59324B9F0A7000F20FF /* Debug */,
+				47CFB59424B9F0A7000F20FF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		47CFB59524B9F0A7000F20FF /* Build configuration list for PBXNativeTarget "Singapore Travel Mate" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				47CFB59624B9F0A7000F20FF /* Debug */,
+				47CFB59724B9F0A7000F20FF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		47CFB59824B9F0A7000F20FF /* Build configuration list for PBXNativeTarget "Singapore Travel MateTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				47CFB59924B9F0A7000F20FF /* Debug */,
+				47CFB59A24B9F0A7000F20FF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		47CFB59B24B9F0A7000F20FF /* Build configuration list for PBXNativeTarget "Singapore Travel MateUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				47CFB59C24B9F0A7000F20FF /* Debug */,
+				47CFB59D24B9F0A7000F20FF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 47CFB55E24B9F09C000F20FF /* Project object */;
+}
