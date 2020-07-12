@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -11,13 +11,15 @@
 		32F6E0712CAE6F00A4B18C83 /* Pods_Singapore_Travel_Mate_Singapore_Travel_MateUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0566F44E3446C78C13D8C9E /* Pods_Singapore_Travel_Mate_Singapore_Travel_MateUITests.framework */; };
 		47CFB56B24B9F09D000F20FF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 47CFB56A24B9F09D000F20FF /* AppDelegate.m */; };
 		47CFB56E24B9F09D000F20FF /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 47CFB56D24B9F09D000F20FF /* SceneDelegate.m */; };
-		47CFB57124B9F09D000F20FF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 47CFB57024B9F09D000F20FF /* ViewController.m */; };
+		47CFB57124B9F09D000F20FF /* ExploreSingaporeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 47CFB57024B9F09D000F20FF /* ExploreSingaporeViewController.m */; };
 		47CFB57424B9F09D000F20FF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 47CFB57224B9F09D000F20FF /* Main.storyboard */; };
 		47CFB57624B9F0A5000F20FF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 47CFB57524B9F0A5000F20FF /* Assets.xcassets */; };
 		47CFB57924B9F0A5000F20FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 47CFB57724B9F0A5000F20FF /* LaunchScreen.storyboard */; };
 		47CFB57C24B9F0A5000F20FF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 47CFB57B24B9F0A5000F20FF /* main.m */; };
 		47CFB58624B9F0A7000F20FF /* Singapore_Travel_MateTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 47CFB58524B9F0A7000F20FF /* Singapore_Travel_MateTests.m */; };
 		47CFB59124B9F0A7000F20FF /* Singapore_Travel_MateUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 47CFB59024B9F0A7000F20FF /* Singapore_Travel_MateUITests.m */; };
+		47CFB5A024BA0AA2000F20FF /* SingaporeToursimBoardAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 47CFB59F24BA0AA1000F20FF /* SingaporeToursimBoardAPI.m */; };
+		47CFB5A324BA0B60000F20FF /* Place.m in Sources */ = {isa = PBXBuildFile; fileRef = 47CFB5A224BA0B60000F20FF /* Place.m */; };
 		5C98C9C4A1B6B5EFCA675929 /* Pods_Singapore_Travel_MateTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDA9AAA9306869FF5CF49B0F /* Pods_Singapore_Travel_MateTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -45,8 +47,8 @@
 		47CFB56A24B9F09D000F20FF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		47CFB56C24B9F09D000F20FF /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
 		47CFB56D24B9F09D000F20FF /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
-		47CFB56F24B9F09D000F20FF /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		47CFB57024B9F09D000F20FF /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		47CFB56F24B9F09D000F20FF /* ExploreSingaporeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ExploreSingaporeViewController.h; sourceTree = "<group>"; };
+		47CFB57024B9F09D000F20FF /* ExploreSingaporeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExploreSingaporeViewController.m; sourceTree = "<group>"; };
 		47CFB57324B9F09D000F20FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		47CFB57524B9F0A5000F20FF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		47CFB57824B9F0A5000F20FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -58,6 +60,10 @@
 		47CFB58C24B9F0A7000F20FF /* Singapore Travel MateUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Singapore Travel MateUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		47CFB59024B9F0A7000F20FF /* Singapore_Travel_MateUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Singapore_Travel_MateUITests.m; sourceTree = "<group>"; };
 		47CFB59224B9F0A7000F20FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		47CFB59E24BA0AA1000F20FF /* SingaporeToursimBoardAPI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SingaporeToursimBoardAPI.h; sourceTree = "<group>"; };
+		47CFB59F24BA0AA1000F20FF /* SingaporeToursimBoardAPI.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SingaporeToursimBoardAPI.m; sourceTree = "<group>"; };
+		47CFB5A124BA0B60000F20FF /* Place.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Place.h; sourceTree = "<group>"; };
+		47CFB5A224BA0B60000F20FF /* Place.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Place.m; sourceTree = "<group>"; };
 		601DE5D5BF92BF8B84AAA879 /* Pods-Singapore Travel Mate.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Singapore Travel Mate.debug.xcconfig"; path = "Target Support Files/Pods-Singapore Travel Mate/Pods-Singapore Travel Mate.debug.xcconfig"; sourceTree = "<group>"; };
 		669E2EDAE25B7475EB43487D /* Pods-Singapore Travel Mate-Singapore Travel MateUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Singapore Travel Mate-Singapore Travel MateUITests.debug.xcconfig"; path = "Target Support Files/Pods-Singapore Travel Mate-Singapore Travel MateUITests/Pods-Singapore Travel Mate-Singapore Travel MateUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		C0566F44E3446C78C13D8C9E /* Pods_Singapore_Travel_Mate_Singapore_Travel_MateUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Singapore_Travel_Mate_Singapore_Travel_MateUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -116,7 +122,6 @@
 				F40C28ACA6E853BBF6B28F24 /* Pods-Singapore Travel MateTests.debug.xcconfig */,
 				F3AB011A3DA6A159F0BF4466 /* Pods-Singapore Travel MateTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -149,13 +154,17 @@
 				47CFB56A24B9F09D000F20FF /* AppDelegate.m */,
 				47CFB56C24B9F09D000F20FF /* SceneDelegate.h */,
 				47CFB56D24B9F09D000F20FF /* SceneDelegate.m */,
-				47CFB56F24B9F09D000F20FF /* ViewController.h */,
-				47CFB57024B9F09D000F20FF /* ViewController.m */,
+				47CFB56F24B9F09D000F20FF /* ExploreSingaporeViewController.h */,
+				47CFB57024B9F09D000F20FF /* ExploreSingaporeViewController.m */,
 				47CFB57224B9F09D000F20FF /* Main.storyboard */,
 				47CFB57524B9F0A5000F20FF /* Assets.xcassets */,
 				47CFB57724B9F0A5000F20FF /* LaunchScreen.storyboard */,
 				47CFB57A24B9F0A5000F20FF /* Info.plist */,
 				47CFB57B24B9F0A5000F20FF /* main.m */,
+				47CFB59E24BA0AA1000F20FF /* SingaporeToursimBoardAPI.h */,
+				47CFB59F24BA0AA1000F20FF /* SingaporeToursimBoardAPI.m */,
+				47CFB5A124BA0B60000F20FF /* Place.h */,
+				47CFB5A224BA0B60000F20FF /* Place.m */,
 			);
 			path = "Singapore Travel Mate";
 			sourceTree = "<group>";
@@ -416,8 +425,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				47CFB57124B9F09D000F20FF /* ViewController.m in Sources */,
+				47CFB57124B9F09D000F20FF /* ExploreSingaporeViewController.m in Sources */,
+				47CFB5A024BA0AA2000F20FF /* SingaporeToursimBoardAPI.m in Sources */,
 				47CFB56B24B9F09D000F20FF /* AppDelegate.m in Sources */,
+				47CFB5A324BA0B60000F20FF /* Place.m in Sources */,
 				47CFB57C24B9F0A5000F20FF /* main.m in Sources */,
 				47CFB56E24B9F09D000F20FF /* SceneDelegate.m in Sources */,
 			);

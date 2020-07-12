@@ -7,8 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+@import GoogleMaps;
 
-@interface ViewController : UIViewController
+@interface ExploreSingaporeViewController : UIViewController
+@property (weak, nonatomic) IBOutlet GMSMapView *googleMapView;
 
 
 @end

@@ -23,10 +23,10 @@
             </objects>
             <point key="canvasLocation" x="-7" y="400"/>
         </scene>
-        <!--View Controller-->
+        <!--Explore Singapore View Controller-->
         <scene sceneID="A1M-HI-OkG">
             <objects>
-                <viewController id="GxU-gA-GC6" sceneMemberID="viewController">
+                <viewController id="GxU-gA-GC6" customClass="ExploreSingaporeViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="CB3-Ix-Ph6">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -35,17 +35,55 @@
                                 <rect key="frame" x="0.0" y="88" width="414" height="665"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                             </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="bMN-I4-jkA">
+                                <rect key="frame" x="0.0" y="753" width="414" height="605"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <view key="tableFooterView" contentMode="scaleToFill" id="Fci-rM-ric">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Explore Singapore" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Iz7-FG-wrM">
+                                            <rect key="frame" x="137.5" y="11.5" width="139" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TOY-xf-6od">
+                                            <rect key="frame" x="366" y="2" width="40" height="40"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="40" id="538-ws-lQM"/>
+                                                <constraint firstAttribute="width" constant="40" id="6EJ-er-kUB"/>
+                                            </constraints>
+                                            <state key="normal" title="Button"/>
+                                        </button>
+                                    </subviews>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                    <constraints>
+                                        <constraint firstItem="Iz7-FG-wrM" firstAttribute="centerX" secondItem="Fci-rM-ric" secondAttribute="centerX" id="IxG-BO-itC"/>
+                                        <constraint firstItem="Iz7-FG-wrM" firstAttribute="centerY" secondItem="Fci-rM-ric" secondAttribute="centerY" id="PNu-an-bjv"/>
+                                        <constraint firstItem="TOY-xf-6od" firstAttribute="centerY" secondItem="Fci-rM-ric" secondAttribute="centerY" id="taQ-xR-wW0"/>
+                                        <constraint firstAttribute="trailing" secondItem="TOY-xf-6od" secondAttribute="trailing" constant="8" id="yQB-49-tw1"/>
+                                    </constraints>
+                                </view>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="man-PQ-StR" firstAttribute="trailing" secondItem="vnw-qS-5xc" secondAttribute="trailing" id="7sW-nw-pDD"/>
                             <constraint firstItem="man-PQ-StR" firstAttribute="leading" secondItem="vnw-qS-5xc" secondAttribute="leading" id="JAQ-Qg-xQ5"/>
+                            <constraint firstItem="bMN-I4-jkA" firstAttribute="height" secondItem="man-PQ-StR" secondAttribute="height" constant="-60" id="M6l-4M-AVQ"/>
+                            <constraint firstItem="bMN-I4-jkA" firstAttribute="leading" secondItem="man-PQ-StR" secondAttribute="leading" id="NTb-1e-IIA"/>
                             <constraint firstItem="man-PQ-StR" firstAttribute="bottom" secondItem="vnw-qS-5xc" secondAttribute="bottom" constant="-60" id="a7Q-dJ-jRP"/>
+                            <constraint firstItem="bMN-I4-jkA" firstAttribute="top" secondItem="man-PQ-StR" secondAttribute="bottom" id="dQm-3B-0yW"/>
                             <constraint firstItem="man-PQ-StR" firstAttribute="top" secondItem="vnw-qS-5xc" secondAttribute="top" id="rHx-U7-v5v"/>
+                            <constraint firstItem="bMN-I4-jkA" firstAttribute="trailing" secondItem="man-PQ-StR" secondAttribute="trailing" id="yhd-FJ-npJ"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="vnw-qS-5xc"/>
                     </view>
                     <navigationItem key="navigationItem" id="gM6-DK-7hm"/>
+                    <connections>
+                        <outlet property="googleMapView" destination="man-PQ-StR" id="uYg-LI-Shr"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ugH-zm-MdP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
