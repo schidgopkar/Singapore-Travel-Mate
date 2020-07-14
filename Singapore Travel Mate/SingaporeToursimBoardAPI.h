@@ -8,8 +8,15 @@
 
 #import <Foundation/Foundation.h>
 
+@protocol FetchedPlacesProtocol <NSObject>
+
+-(void)fetchedPlaces:(NSArray*)places;
+
+@end
 
 @interface SingaporeToursimBoardAPI : NSObject
+
+@property(nonatomic, weak) id <FetchedPlacesProtocol> delegate;
 
 
 -(void)fetchPlacesNearLocation:(NSString*)location;

@@ -10,10 +10,19 @@
 
 @implementation Place
 
--(instancetype)init:(NSDictionary*)place{
+-(instancetype)init:(NSDictionary*)placeDictionary{
     self = [super init];
     if (self) {
-        _placeName = place[@"name"];
+        _uuid = placeDictionary[@"uuid"];
+        _name = placeDictionary[@"name"];
+        _category = placeDictionary[@"categoryDescription"];
+        _rating = placeDictionary[@"rating"];
+        _latitude = placeDictionary[@"latitude"];
+        _longitude = placeDictionary[@"longitude"];
+        _address = placeDictionary[@"address"];
+        _thumbnailImageUuid = placeDictionary[@"thumbnailImage"];
+        
+        
     }
     return self;
 }

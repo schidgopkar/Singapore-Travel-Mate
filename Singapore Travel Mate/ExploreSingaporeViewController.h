@@ -11,7 +11,9 @@
 
 @interface ExploreSingaporeViewController : UIViewController
 @property (weak, nonatomic) IBOutlet GMSMapView *googleMapView;
-
+@property (weak, nonatomic) IBOutlet UITableView *tableView;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *tableContainerViewTopConstraint;
+@property (weak, nonatomic) IBOutlet UIView *tableContainerView;
 
 @end
 

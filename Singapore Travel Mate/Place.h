@@ -10,14 +10,16 @@
 
 @interface Place : NSObject
 
-@property(strong, nonatomic) NSString *placeName;
-@property(strong, nonatomic) NSString *placeID;
-@property(strong, nonatomic) NSString *placeCategory;
-@property(strong, nonatomic) NSString *placeThumbnailUuid;
-@property(strong, nonatomic) NSString *latitude;
-@property(strong, nonatomic) NSString *longitude;
+@property(strong, nonatomic) NSString *name;
+@property(strong, nonatomic) NSString *uuid;
+@property(strong, nonatomic) NSString *category;
+@property(strong, nonatomic) NSNumber *rating;
+@property(strong, nonatomic) NSString *thumbnailImageUuid;
+@property(strong, nonatomic) NSNumber *latitude;
+@property(strong, nonatomic) NSNumber *longitude;
+@property(strong, nonatomic) NSString *address;
 
--(instancetype)init:(NSDictionary*)place;
+-(instancetype)init:(NSDictionary*)placeDictionary;
 
 @end
 
