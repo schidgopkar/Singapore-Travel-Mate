@@ -1,45 +1,50 @@
 //
-//  SingaporeToursimBoardAPI.m
+//  PlaceModel.m
 //  Singapore Travel Mate
 //
-//  Created by Shrikant Chidgopkar on 11/07/20.
+//  Created by Shrikant Chidgopkar on 24/7/20.
 //  Copyright © 2020 Shrikant Chidgopkar. All rights reserved.
 //
 
-#import "SingaporeToursimBoardAPI.h"
+#import "PlaceModel.h"
 #import "Place.h"
 
-@interface SingaporeToursimBoardAPI()
+
+
+@interface PlaceModel ()
 
 @property(nonatomic, strong) NSString *apiKey;
-@property(nonatomic, strong) NSMutableArray *places;
 
 @end
 
-@implementation SingaporeToursimBoardAPI
+
+@implementation PlaceModel
 
 
 -(instancetype)init{
+    
     self = [super init];
     if (self) {
-        _apiKey = @"mkFeYP700IB5kG2t9eNbqLpTLoaM3mZ4";
+        
     }
+    
     return self;
+    
 }
-
 
 
 -(void)fetchPlacesNearLocation:(NSString*)location{
     
     _places = [[NSMutableArray alloc]init];
+    
+    _apiKey = @"mkFeYP700IB5kG2t9eNbqLpTLoaM3mZ4";
         
     NSString *urlString = [NSString stringWithFormat:@"https://tih-api.stb.gov.sg/map/v1/search/multidataset?location=%@&apikey=%@",location, _apiKey];
     
     NSLog(@"%@", urlString);
     
-    NSURL *url = [NSURL URLWithString:urlString];
     
-    [[NSURLSession.sharedSession dataTaskWithURL:url completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
+    [_serviceController fetchFromUrl:urlString withCompletion:^(NSData *data, NSError *error) {
         
         NSDictionary *jsonDictionary = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableLeaves error:&error];
         
@@ -93,14 +98,13 @@
             
         }
         
-        [self->_delegate fetchedPlaces:self->_places];
+        [self->_placeDownloadDelegate didfetchedPlaces:self->_places];
         
         NSLog(@"%@", jsonDictionary);
         NSLog(@"%@", error);
         
-    }] resume];
-    
-    
+    }];
+        
 }
 
 

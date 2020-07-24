@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		18D922EB35089642E9876D98 /* Pods_Singapore_Travel_Mate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 128E37128356071B2FA14C72 /* Pods_Singapore_Travel_Mate.framework */; };
 		32F6E0712CAE6F00A4B18C83 /* Pods_Singapore_Travel_Mate_Singapore_Travel_MateUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0566F44E3446C78C13D8C9E /* Pods_Singapore_Travel_Mate_Singapore_Travel_MateUITests.framework */; };
+		4716CDFD24C9BC1500B894D1 /* ServiceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4716CDFC24C9BC1500B894D1 /* ServiceController.m */; };
+		475B051E24CA0E2500B7F5A5 /* PlaceModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 475B051D24CA0E2500B7F5A5 /* PlaceModel.m */; };
+		475B052124CA1AFE00B7F5A5 /* ExploreSingaporeViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 475B052024CA1AFE00B7F5A5 /* ExploreSingaporeViewModel.m */; };
 		47CFB56B24B9F09D000F20FF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 47CFB56A24B9F09D000F20FF /* AppDelegate.m */; };
 		47CFB56E24B9F09D000F20FF /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 47CFB56D24B9F09D000F20FF /* SceneDelegate.m */; };
 		47CFB57124B9F09D000F20FF /* ExploreSingaporeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 47CFB57024B9F09D000F20FF /* ExploreSingaporeViewController.m */; };
@@ -20,6 +23,8 @@
 		47CFB59124B9F0A7000F20FF /* Singapore_Travel_MateUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 47CFB59024B9F0A7000F20FF /* Singapore_Travel_MateUITests.m */; };
 		47CFB5A024BA0AA2000F20FF /* SingaporeToursimBoardAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 47CFB59F24BA0AA1000F20FF /* SingaporeToursimBoardAPI.m */; };
 		47CFB5A324BA0B60000F20FF /* Place.m in Sources */ = {isa = PBXBuildFile; fileRef = 47CFB5A224BA0B60000F20FF /* Place.m */; };
+		47D47C2F24C9A10000024938 /* NSObject+NSURLSession_Protocol.m in Sources */ = {isa = PBXBuildFile; fileRef = 47D47C2E24C9A10000024938 /* NSObject+NSURLSession_Protocol.m */; };
+		47E6E14424BDA65F00F158EC /* PlaceTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 47E6E14324BDA65E00F158EC /* PlaceTableViewCell.m */; };
 		5C98C9C4A1B6B5EFCA675929 /* Pods_Singapore_Travel_MateTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDA9AAA9306869FF5CF49B0F /* Pods_Singapore_Travel_MateTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -42,6 +47,14 @@
 
 /* Begin PBXFileReference section */
 		128E37128356071B2FA14C72 /* Pods_Singapore_Travel_Mate.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Singapore_Travel_Mate.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4716CDFA24C9BB5600B894D1 /* NSURLSessionProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSURLSessionProtocol.h; sourceTree = "<group>"; };
+		4716CDFB24C9BC1500B894D1 /* ServiceController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ServiceController.h; sourceTree = "<group>"; };
+		4716CDFC24C9BC1500B894D1 /* ServiceController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ServiceController.m; sourceTree = "<group>"; };
+		475B051C24CA0E2500B7F5A5 /* PlaceModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PlaceModel.h; sourceTree = "<group>"; };
+		475B051D24CA0E2500B7F5A5 /* PlaceModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PlaceModel.m; sourceTree = "<group>"; };
+		475B051F24CA1AFE00B7F5A5 /* ExploreSingaporeViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ExploreSingaporeViewModel.h; sourceTree = "<group>"; };
+		475B052024CA1AFE00B7F5A5 /* ExploreSingaporeViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExploreSingaporeViewModel.m; sourceTree = "<group>"; };
+		475B052224CA1B4F00B7F5A5 /* ExploreSingaporeViewControllerProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ExploreSingaporeViewControllerProtocol.h; sourceTree = "<group>"; };
 		47CFB56624B9F09D000F20FF /* Singapore Travel Mate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Singapore Travel Mate.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		47CFB56924B9F09D000F20FF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		47CFB56A24B9F09D000F20FF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -64,6 +77,10 @@
 		47CFB59F24BA0AA1000F20FF /* SingaporeToursimBoardAPI.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SingaporeToursimBoardAPI.m; sourceTree = "<group>"; };
 		47CFB5A124BA0B60000F20FF /* Place.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Place.h; sourceTree = "<group>"; };
 		47CFB5A224BA0B60000F20FF /* Place.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Place.m; sourceTree = "<group>"; };
+		47D47C2D24C9A10000024938 /* NSObject+NSURLSession_Protocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+NSURLSession_Protocol.h"; sourceTree = "<group>"; };
+		47D47C2E24C9A10000024938 /* NSObject+NSURLSession_Protocol.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+NSURLSession_Protocol.m"; sourceTree = "<group>"; };
+		47E6E14224BDA65E00F158EC /* PlaceTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PlaceTableViewCell.h; sourceTree = "<group>"; };
+		47E6E14324BDA65E00F158EC /* PlaceTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PlaceTableViewCell.m; sourceTree = "<group>"; };
 		601DE5D5BF92BF8B84AAA879 /* Pods-Singapore Travel Mate.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Singapore Travel Mate.debug.xcconfig"; path = "Target Support Files/Pods-Singapore Travel Mate/Pods-Singapore Travel Mate.debug.xcconfig"; sourceTree = "<group>"; };
 		669E2EDAE25B7475EB43487D /* Pods-Singapore Travel Mate-Singapore Travel MateUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Singapore Travel Mate-Singapore Travel MateUITests.debug.xcconfig"; path = "Target Support Files/Pods-Singapore Travel Mate-Singapore Travel MateUITests/Pods-Singapore Travel Mate-Singapore Travel MateUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		C0566F44E3446C78C13D8C9E /* Pods_Singapore_Travel_Mate_Singapore_Travel_MateUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Singapore_Travel_Mate_Singapore_Travel_MateUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -125,6 +142,59 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		475B052324CA1D2E00B7F5A5 /* Explore Singapore Tab */ = {
+			isa = PBXGroup;
+			children = (
+				475B052724CA1DD500B7F5A5 /* Protocols */,
+				475B052624CA1D7E00B7F5A5 /* View Model */,
+				475B052524CA1D6100B7F5A5 /* View */,
+				475B052424CA1D4700B7F5A5 /* Model */,
+			);
+			path = "Explore Singapore Tab";
+			sourceTree = "<group>";
+		};
+		475B052424CA1D4700B7F5A5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				47CFB5A124BA0B60000F20FF /* Place.h */,
+				47CFB5A224BA0B60000F20FF /* Place.m */,
+				475B051C24CA0E2500B7F5A5 /* PlaceModel.h */,
+				475B051D24CA0E2500B7F5A5 /* PlaceModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		475B052524CA1D6100B7F5A5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				47E6E14224BDA65E00F158EC /* PlaceTableViewCell.h */,
+				47E6E14324BDA65E00F158EC /* PlaceTableViewCell.m */,
+				47CFB56F24B9F09D000F20FF /* ExploreSingaporeViewController.h */,
+				47CFB57024B9F09D000F20FF /* ExploreSingaporeViewController.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		475B052624CA1D7E00B7F5A5 /* View Model */ = {
+			isa = PBXGroup;
+			children = (
+				475B051F24CA1AFE00B7F5A5 /* ExploreSingaporeViewModel.h */,
+				475B052024CA1AFE00B7F5A5 /* ExploreSingaporeViewModel.m */,
+			);
+			path = "View Model";
+			sourceTree = "<group>";
+		};
+		475B052724CA1DD500B7F5A5 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				47D47C2D24C9A10000024938 /* NSObject+NSURLSession_Protocol.h */,
+				47D47C2E24C9A10000024938 /* NSObject+NSURLSession_Protocol.m */,
+				4716CDFA24C9BB5600B894D1 /* NSURLSessionProtocol.h */,
+				475B052224CA1B4F00B7F5A5 /* ExploreSingaporeViewControllerProtocol.h */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
 		47CFB55D24B9F09C000F20FF = {
 			isa = PBXGroup;
 			children = (
@@ -154,17 +224,16 @@
 				47CFB56A24B9F09D000F20FF /* AppDelegate.m */,
 				47CFB56C24B9F09D000F20FF /* SceneDelegate.h */,
 				47CFB56D24B9F09D000F20FF /* SceneDelegate.m */,
-				47CFB56F24B9F09D000F20FF /* ExploreSingaporeViewController.h */,
-				47CFB57024B9F09D000F20FF /* ExploreSingaporeViewController.m */,
 				47CFB57224B9F09D000F20FF /* Main.storyboard */,
 				47CFB57524B9F0A5000F20FF /* Assets.xcassets */,
 				47CFB57724B9F0A5000F20FF /* LaunchScreen.storyboard */,
 				47CFB57A24B9F0A5000F20FF /* Info.plist */,
 				47CFB57B24B9F0A5000F20FF /* main.m */,
+				475B052324CA1D2E00B7F5A5 /* Explore Singapore Tab */,
 				47CFB59E24BA0AA1000F20FF /* SingaporeToursimBoardAPI.h */,
 				47CFB59F24BA0AA1000F20FF /* SingaporeToursimBoardAPI.m */,
-				47CFB5A124BA0B60000F20FF /* Place.h */,
-				47CFB5A224BA0B60000F20FF /* Place.m */,
+				4716CDFB24C9BC1500B894D1 /* ServiceController.h */,
+				4716CDFC24C9BC1500B894D1 /* ServiceController.m */,
 			);
 			path = "Singapore Travel Mate";
 			sourceTree = "<group>";
@@ -199,6 +268,7 @@
 				47CFB56324B9F09D000F20FF /* Frameworks */,
 				47CFB56424B9F09D000F20FF /* Resources */,
 				39EABCAC3A3EF6C4FB7FDBB5 /* [CP] Copy Pods Resources */,
+				203EA855A933D74CFC80A067 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -237,6 +307,7 @@
 				47CFB58924B9F0A7000F20FF /* Frameworks */,
 				47CFB58A24B9F0A7000F20FF /* Resources */,
 				1BBDED63FDC377BF7E798F30 /* [CP] Copy Pods Resources */,
+				8F5A4986995D5E82B2D8FD15 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -254,7 +325,7 @@
 		47CFB55E24B9F09C000F20FF /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 1150;
+				LastUpgradeCheck = 1200;
 				ORGANIZATIONNAME = "Shrikant Chidgopkar";
 				TargetAttributes = {
 					47CFB56524B9F09D000F20FF = {
@@ -379,6 +450,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		203EA855A933D74CFC80A067 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Singapore Travel Mate/Pods-Singapore Travel Mate-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Singapore Travel Mate/Pods-Singapore Travel Mate-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Singapore Travel Mate/Pods-Singapore Travel Mate-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		39EABCAC3A3EF6C4FB7FDBB5 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -418,6 +506,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		8F5A4986995D5E82B2D8FD15 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Singapore Travel Mate-Singapore Travel MateUITests/Pods-Singapore Travel Mate-Singapore Travel MateUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Singapore Travel Mate-Singapore Travel MateUITests/Pods-Singapore Travel Mate-Singapore Travel MateUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Singapore Travel Mate-Singapore Travel MateUITests/Pods-Singapore Travel Mate-Singapore Travel MateUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -427,9 +532,14 @@
 			files = (
 				47CFB57124B9F09D000F20FF /* ExploreSingaporeViewController.m in Sources */,
 				47CFB5A024BA0AA2000F20FF /* SingaporeToursimBoardAPI.m in Sources */,
+				4716CDFD24C9BC1500B894D1 /* ServiceController.m in Sources */,
+				475B051E24CA0E2500B7F5A5 /* PlaceModel.m in Sources */,
 				47CFB56B24B9F09D000F20FF /* AppDelegate.m in Sources */,
 				47CFB5A324BA0B60000F20FF /* Place.m in Sources */,
+				475B052124CA1AFE00B7F5A5 /* ExploreSingaporeViewModel.m in Sources */,
+				47E6E14424BDA65F00F158EC /* PlaceTableViewCell.m in Sources */,
 				47CFB57C24B9F0A5000F20FF /* main.m in Sources */,
+				47D47C2F24C9A10000024938 /* NSObject+NSURLSession_Protocol.m in Sources */,
 				47CFB56E24B9F09D000F20FF /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -511,6 +621,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -569,6 +680,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;

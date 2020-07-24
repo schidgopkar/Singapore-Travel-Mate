@@ -12,6 +12,7 @@
 
 -(void)fetchedPlaces:(NSArray*)places;
 
+
 @end
 
 @interface SingaporeToursimBoardAPI : NSObject

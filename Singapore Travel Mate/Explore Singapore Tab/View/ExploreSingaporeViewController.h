@@ -7,13 +7,20 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ExploreSingaporeViewModel.h"
 @import GoogleMaps;
 
 @interface ExploreSingaporeViewController : UIViewController
+
 @property (weak, nonatomic) IBOutlet GMSMapView *googleMapView;
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *tableContainerViewTopConstraint;
 @property (weak, nonatomic) IBOutlet UIView *tableContainerView;
+@property(strong, nonatomic) ExploreSingaporeViewModel *viewModel;
+@property (weak, nonatomic) IBOutlet UIButton *searchThisAreaButton;
+
+
 
 @end
+
 

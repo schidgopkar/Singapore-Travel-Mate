@@ -20,7 +20,7 @@
         _latitude = placeDictionary[@"latitude"];
         _longitude = placeDictionary[@"longitude"];
         _address = placeDictionary[@"address"];
-        _thumbnailImageUuid = placeDictionary[@"thumbnailImage"];
+        _thumbnailImageURL = placeDictionary[@"thumbnailImage"];
         
         
     }
