@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <GoogleMaps/GoogleMaps.h>
 
 
 
@@ -15,6 +16,10 @@
 -(void)setUpGoogleMapView;
 -(void)setUpTableContainerView;
 -(void)setUpGestureRecognizers;
+-(void)reloadTableView;
+-(void)clearGoogleMap;
+-(void)plotMarkerOnMap:(GMSMarker*)marker;
+-(void)setTitle;
 
 @end
 

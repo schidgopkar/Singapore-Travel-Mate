@@ -25,7 +25,7 @@
     
     self = [super init];
     if (self) {
-        
+        _serviceController = [[ServiceController alloc]init];
     }
     
     return self;
@@ -39,69 +39,73 @@
     
     _apiKey = @"mkFeYP700IB5kG2t9eNbqLpTLoaM3mZ4";
         
-    NSString *urlString = [NSString stringWithFormat:@"https://tih-api.stb.gov.sg/map/v1/search/multidataset?location=%@&apikey=%@",location, _apiKey];
+    NSString *urlString = [NSString stringWithFormat:@"https://tih-api.stb.gov.sg/map/v1/search/multidataset?location=%@&apikey=%@&radius=40000&distinct=Yes",location, _apiKey];
     
     NSLog(@"%@", urlString);
     
     
     [_serviceController fetchFromUrl:urlString withCompletion:^(NSData *data, NSError *error) {
         
-        NSDictionary *jsonDictionary = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableLeaves error:&error];
-        
-        NSArray *jsonDataArray = jsonDictionary[@"data"];
-        
-        for (NSDictionary* place in jsonDataArray) {
-            NSString *uuid = place[@"uuid"];
-            NSString *name = place[@"name"];
-            NSString *category = place[@"categoryDescription"];
-            NSNumber *rating = place[@"rating"];
+        if (data) {
+            NSDictionary *jsonDictionary = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableLeaves error:&error];
             
-            //Parsing Location
-            NSDictionary *location = [place objectForKey:@"location"];
-            NSNumber *latitude = [location objectForKey:@"latitude"];
-            NSNumber *longitude = [location objectForKey:@"longitude"];
+            NSArray *jsonDataArray = jsonDictionary[@"data"];
             
-            //Parsing Address
-            NSDictionary *address = [place objectForKey:@"address"];
-            NSString *streetName = [address objectForKey:@"buildingName"];
-            NSString *buildingName = [address objectForKey:@"buildingName"];
-            NSString *postalCode = [address objectForKey:@"postalCode"];
-            
-            NSString *addressString = [NSString stringWithFormat:@"%@, %@, %@", buildingName, streetName, postalCode];
-            
-            //Parsing Thumbnail Image UUID
-            
-            NSArray *thumbnails = [place objectForKey:@"thumbnails"];
-            NSDictionary *firstThumbnail = thumbnails.firstObject;
-            NSString *thumbnailUuid = [firstThumbnail objectForKey:@"uuid"];
-            
-            NSString *imageURLString = [NSString stringWithFormat:@"https://tih-api.stb.gov.sg/media/v1/download/uuid/%@?apikey=%@&fileType=Default",thumbnailUuid, self->_apiKey];
-            
-            //Dictionary for instatiating Place Object
-            
-            NSMutableDictionary *placeDictionary = [[NSMutableDictionary alloc]init];
-            [placeDictionary setValue:uuid forKey:@"uuid"];
-            [placeDictionary setValue:name forKey:@"name"];
-            [placeDictionary setValue:category forKey:@"categoryDescription"];
-            [placeDictionary setValue:rating forKey:@"rating"];
-            [placeDictionary setValue:latitude forKey:@"latitude"];
-            [placeDictionary setValue:longitude forKey:@"longitude"];
-            [placeDictionary setValue:addressString forKey:@"address"];
-            [placeDictionary setValue:imageURLString forKey:@"thumbnailImage"];
-            
-            Place *place = [[Place alloc]init:placeDictionary];
-            
-            [self->_places addObject:place];
-            
-            NSLog(@"%@", imageURLString);
+            for (NSDictionary* place in jsonDataArray) {
+                NSString *uuid = place[@"uuid"];
+                NSString *name = place[@"name"];
+                NSString *category = place[@"categoryDescription"];
+                NSNumber *rating = place[@"rating"];
+                
+                //Parsing Location
+                NSDictionary *location = [place objectForKey:@"location"];
+                NSNumber *latitude = [location objectForKey:@"latitude"];
+                NSNumber *longitude = [location objectForKey:@"longitude"];
+                
+                //Parsing Address
+                NSDictionary *address = [place objectForKey:@"address"];
+                NSString *streetName = [address objectForKey:@"buildingName"];
+                NSString *buildingName = [address objectForKey:@"buildingName"];
+                NSString *postalCode = [address objectForKey:@"postalCode"];
+                
+                NSString *addressString = [NSString stringWithFormat:@"%@, %@, %@", buildingName, streetName, postalCode];
+                
+                //Parsing Thumbnail Image UUID
+                
+                NSArray *thumbnails = [place objectForKey:@"thumbnails"];
+                NSDictionary *firstThumbnail = thumbnails.firstObject;
+                NSString *thumbnailUuid = [firstThumbnail objectForKey:@"uuid"];
+                
+                NSString *imageURLString = [NSString stringWithFormat:@"https://tih-api.stb.gov.sg/media/v1/download/uuid/%@?apikey=%@&fileType=Default",thumbnailUuid, self->_apiKey];
+                
+                //Dictionary for instatiating Place Object
+                
+                NSMutableDictionary *placeDictionary = [[NSMutableDictionary alloc]init];
+                [placeDictionary setValue:uuid forKey:@"uuid"];
+                [placeDictionary setValue:name forKey:@"name"];
+                [placeDictionary setValue:category forKey:@"categoryDescription"];
+                [placeDictionary setValue:rating forKey:@"rating"];
+                [placeDictionary setValue:latitude forKey:@"latitude"];
+                [placeDictionary setValue:longitude forKey:@"longitude"];
+                [placeDictionary setValue:addressString forKey:@"address"];
+                [placeDictionary setValue:imageURLString forKey:@"thumbnailImage"];
+                
+                Place *place = [[Place alloc]init:placeDictionary];
+                
+                [self->_places addObject:place];
+                
+                NSLog(@"%@", imageURLString);
 
+                
+            }
             
+            [self->_placeDownloadDelegate didfetchedPlaces:self->_places];
+            
+            NSLog(@"%@", jsonDictionary);
+            NSLog(@"%@", error);
+
         }
         
-        [self->_placeDownloadDelegate didfetchedPlaces:self->_places];
-        
-        NSLog(@"%@", jsonDictionary);
-        NSLog(@"%@", error);
         
     }];
         

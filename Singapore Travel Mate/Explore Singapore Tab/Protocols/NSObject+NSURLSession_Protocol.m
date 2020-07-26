@@ -7,10 +7,10 @@
 //
 
 #import "NSObject+NSURLSession_Protocol.h"
-#import "NSURLSessionProtocol.h"
-#import "SingaporeToursimBoardAPI.h"
 
 
 @implementation NSURLSession (NSURLSessionProtocol)
+
+
 
 @end

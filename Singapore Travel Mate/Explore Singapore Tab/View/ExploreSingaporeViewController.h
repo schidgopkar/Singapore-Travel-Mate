@@ -8,6 +8,9 @@
 
 #import <UIKit/UIKit.h>
 #import "ExploreSingaporeViewModel.h"
+#import "PlaceTableViewCell.h"
+
+
 @import GoogleMaps;
 
 @interface ExploreSingaporeViewController : UIViewController

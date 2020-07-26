@@ -7,14 +7,18 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "PlaceTableViewCellViewModel.h"
+#import "PlaceTableViewCellProtocol.h"
 
-
-@interface PlaceTableViewCell : UITableViewCell
+@interface PlaceTableViewCell : UITableViewCell <PlaceTableViewCellProtocol>
 @property (weak, nonatomic) IBOutlet UIImageView *placeImageView;
 @property (weak, nonatomic) IBOutlet UILabel *placeRatingLabel;
 @property (weak, nonatomic) IBOutlet UILabel *placeNameLabel;
 @property (weak, nonatomic) IBOutlet UILabel *placeCategoryLabel;
+@property(strong, nonatomic) PlaceTableViewCellViewModel *viewModel;
 
+
+-(void)setUp;
 
 @end
 

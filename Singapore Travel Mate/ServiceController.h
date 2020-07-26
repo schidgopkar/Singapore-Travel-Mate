@@ -13,7 +13,7 @@
 
 @interface ServiceController : NSObject
 
-@property(weak, nonatomic) id <NSURLSessionProtocol> session;
+@property(strong, nonatomic) id <NSURLSessionProtocol> session;
 
 -(void)fetchFromUrl:(NSString*)urlString withCompletion:(void (^)(NSData* data, NSError *error))comletionHandler;
 

@@ -7,7 +7,6 @@
 //
 
 #import "ServiceController.h"
-#import "NSObject+NSURLSession_Protocol.h"
 
 @interface ServiceController()
 
@@ -21,45 +20,48 @@
 -(instancetype)init{
     self = [super init];
     if (self) {
-        self.session = [NSURLSession sessionWithConfiguration:[NSURLSessionConfiguration defaultSessionConfiguration]];
+        NSURLSessionConfiguration *configuration = [NSURLSessionConfiguration defaultSessionConfiguration];
+        NSURLSession *session = [NSURLSession sessionWithConfiguration:configuration];
+        self.session = session;
     }
     return self;
 }
 
 -(void)fetchFromUrl:(NSString*)urlString withCompletion:(void (^)(NSData* data, NSError *error))comletionHandler{
     
-    if (!_session) {
-        comletionHandler(NULL, [NSError errorWithDomain:@"ServiceController" code:100 userInfo:Nil]);
+    if (_session == Nil) {
+        comletionHandler(Nil, [NSError errorWithDomain:@"ServiceController" code:100 userInfo:Nil]);
         return;
     }
     
     NSURL *url = [NSURL URLWithString:urlString];
     
     if(!url){
-        comletionHandler(NULL, [NSError errorWithDomain:@"ServiceController" code:101 userInfo:Nil]);
+        comletionHandler(Nil, [NSError errorWithDomain:@"ServiceController" code:101 userInfo:Nil]);
     }
-    
-    _dataTask = [_session dataTaskWithURL:url completionHandler:^(NSData *  data, NSURLResponse *  response, NSError *  error) {
         
-        if (error) {
-            comletionHandler(NULL, error);
-            return;
-        }
-        
-        if (response) {
-            NSHTTPURLResponse *httpResponse = (NSHTTPURLResponse*) response;
-            if ([httpResponse statusCode] == 200) {
-                comletionHandler(data,NULL);
+   _dataTask = [_session dataTaskWithURL:url completionHandler:^(NSData *  data, NSURLResponse *  response, NSError *  error) {
+            
+            if (error) {
+                comletionHandler(Nil, error);
                 return;
             }
-        }
-        
-        comletionHandler(NULL, [NSError errorWithDomain:@"ServiceController" code:101 userInfo:Nil]);
-        return;
-    }];
+            
+            if (response) {
+                NSHTTPURLResponse *httpResponse = (NSHTTPURLResponse*) response;
+                if (data) {
+                    if ([httpResponse statusCode] == 200) {
+                        comletionHandler(data,Nil);
+                        return;
+                    }
+                }
+            }
+            
+            comletionHandler(Nil, [NSError errorWithDomain:@"ServiceController" code:101 userInfo:Nil]);
+            return;
+        }];
     
     [_dataTask resume];
-    
     
 }
 

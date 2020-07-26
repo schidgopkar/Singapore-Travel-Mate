@@ -7,25 +7,51 @@
 //
 
 #import "PlaceTableViewCell.h"
+#import <SDWebImage/SDWebImage.h>
+
 
 @implementation PlaceTableViewCell
+
+
+CAGradientLayer *gradient;
+
+-(void)setUp{
+    [_viewModel setUp];
+}
+
+
+- (void)setPlaceName:(NSString *)placeName{
+    _placeNameLabel.text = placeName ;
+}
+
+- (void)setPlaceCategoryName:(NSString *)placeCategoryName{
+    _placeCategoryLabel.text = placeCategoryName;
+}
+
+- (void)setPlaceRating:(NSString *)placeRating{
+    _placeRatingLabel.text = placeRating;
+}
+
+- (void)setPlaceImageWithImageUrl:(NSURL *)url{
+    UIImage *placeholderImage = [UIImage imageNamed:@"singapore"];
+    [_placeImageView sd_setImageWithURL:url placeholderImage:placeholderImage];
+}
 
 - (void)awakeFromNib {
     [super awakeFromNib];
     // Initialization code
+    gradient = [[CAGradientLayer alloc]init];
+    gradient.frame = _placeImageView.bounds;
+    UIColor *clearColor = [UIColor clearColor];
+    UIColor *blackColor = [UIColor blackColor];
+    gradient.colors = @[(id)clearColor.CGColor,(id)blackColor.CGColor];
+    [_placeImageView.layer insertSublayer:gradient atIndex:0];
     
-    // SHADOW AND BORDER FOR CELL
-    //yourTableViewCell.contentView.layer.cornerRadius = 5
-    self.contentView.layer.borderWidth = 0.5;
-    self.contentView.layer.borderColor = [[UIColor lightGrayColor]CGColor];
-    self.contentView.layer.masksToBounds = YES;
-    self.layer.shadowColor = [[UIColor grayColor]CGColor];
-    self.layer.shadowOffset = CGSizeMake(0, 2);
-    self.layer.shadowRadius = 2.0;
-    self.layer.shadowOpacity = 1.0;
-    self.layer.masksToBounds = NO;
-    self.layer.shadowPath = [[UIBezierPath bezierPathWithRoundedRect:self.bounds cornerRadius:self.contentView.layer.cornerRadius] CGPath];
-    
+}
+
+- (void)layoutSubviews{
+    [super layoutSubviews];
+    gradient.frame = self.contentView.frame;
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
@@ -33,5 +59,6 @@
 
     // Configure the view for the selected state
 }
+
 
 @end

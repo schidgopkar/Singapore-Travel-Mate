@@ -10,7 +10,7 @@
 #import "ServiceController.h"
 
 
-@protocol FetchedPlacesProtocol <NSObject>
+@protocol PlaceModelProtocol <NSObject>
 
 -(void)didfetchedPlaces:(NSArray*)places;
 
@@ -22,7 +22,7 @@
 
 @property(nonatomic, strong) ServiceController *serviceController;
 @property(nonatomic, strong) NSMutableArray *places;
-@property(nonatomic, weak) id <FetchedPlacesProtocol> placeDownloadDelegate;
+@property(nonatomic, weak) id <PlaceModelProtocol> placeDownloadDelegate;
 
 
 -(void)fetchPlacesNearLocation:(NSString*)location;

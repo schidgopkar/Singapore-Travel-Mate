@@ -10,13 +10,10 @@
 #import "SingaporeToursimBoardAPI.h"
 #import "Place.h"
 #import <QuartzCore/QuartzCore.h>
-#import "PlaceTableViewCell.h"
 #import <SDWebImage/SDWebImage.h>
 
-@interface ExploreSingaporeViewController () <FetchedPlacesProtocol, UITableViewDelegate, UITableViewDataSource, UIGestureRecognizerDelegate, GMSMapViewDelegate>
-
-@property(strong, nonatomic)NSArray *places;
-@property(strong, nonatomic)SingaporeToursimBoardAPI *api;
+@interface ExploreSingaporeViewController () <UITableViewDelegate, UITableViewDataSource, UIGestureRecognizerDelegate, GMSMapViewDelegate>
+@property(nonatomic) CLLocationCoordinate2D initialCoordinate;
 
 @end
 
@@ -27,117 +24,92 @@
 @implementation ExploreSingaporeViewController
 
 
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    
+    if (!_viewModel) {
+        _viewModel = [[ExploreSingaporeViewModel alloc]initWithView:self];
+        [_viewModel performInitialSetup];
+    }
+    
+}
+
+- (void)viewDidAppear:(BOOL)animated{
+    [super viewDidAppear:YES];
+    
+    
+}
+
 
 - (IBAction)searchThisAreaButtonTapped:(UIButton *)sender {
-    
-    
-    
+    [_viewModel searchThisAreaButtonTapped];
 }
-
-
-
--(void)fetchedPlaces:(NSArray *)places{
-    _places = [[NSArray alloc]init];
-    _places = places;
-    
-    dispatch_async(dispatch_get_main_queue(), ^{
-           [self plotPlaceMarkersOnMap];
-        [self->_tableView reloadData];
-    });
-}
-
-
--(Place*)placeAtIndex:(NSInteger)index{
-    return [_places objectAtIndex:index];
-}
-
 
 - (void)mapView:(GMSMapView *)mapView idleAtCameraPosition:(GMSCameraPosition *)position{
+    [_viewModel googleMapViewIdleAtCameraPositon:position];
     
-    _api = [[SingaporeToursimBoardAPI alloc]init];
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        [_viewModel googleMapViewLoadedWithLocation:_initialCoordinate];
+    });
     
-    _api.delegate = self;
+    if(_searchThisAreaButton.isHidden){
+        [_searchThisAreaButton setHidden:NO];
+    }
     
-    NSString *location = [NSString stringWithFormat:@"%f,%f",position.target.latitude, position.target.longitude];
-    
-    [_api fetchPlacesNearLocation:location];
-    
+}
+
+- (void)mapView:(GMSMapView *)mapView willMove:(BOOL)gesture{
+    [_searchThisAreaButton setHidden:YES];
+    [self animateTableContainerViewTopConstraintConstant:-60];
 }
 
 -(void)plotPlaceMarkersOnMap{
-    
-    [_googleMapView clear];
-    
-    for (Place *place in _places) {
-        CLLocationCoordinate2D position = CLLocationCoordinate2DMake([place.latitude doubleValue], [place.longitude doubleValue]);
-        
-        GMSMarker *marker = [GMSMarker markerWithPosition:position];
-        
-        marker.map = _googleMapView;
-        
-    }
+    [_viewModel plotPlacesMarkersOnMap];
 }
 
-
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    // Do any additional setup after loading the view.
-    
-    if (_viewModel == NULL) {
-        _viewModel = [[ExploreSingaporeViewModel alloc]initWithView:self];
-    }
-    
-    
-    [_viewModel performInitialSetup];
-    
-    
-
-    
-
-    
-    
+-(void)animateTableContainerViewTopConstraintConstant:(CGFloat)constant{
+    [UIView animateWithDuration:0.3 animations:^{
+        self->_tableContainerViewTopConstraint.constant = constant;
+        [self.view layoutIfNeeded];
+    }];
 }
 
 -(void)upSwipe:(UISwipeGestureRecognizer*)gesture{
-    
-    [UIView animateWithDuration:0.3 animations:^{
-        self->_tableContainerViewTopConstraint.constant = -self->_tableContainerView.frame.size.height;
-        [self.view layoutIfNeeded];
-    }];
-    
+    [self animateTableContainerViewTopConstraintConstant: -self->_tableContainerView.frame.size.height];
+    [_searchThisAreaButton setHidden:YES];
 }
 
 -(void)downSwipe:(UISwipeGestureRecognizer*)gesture{
-    
-    [UIView animateWithDuration:0.3 animations:^{
-        self->_tableContainerViewTopConstraint.constant = -60;
-        [self.view layoutIfNeeded];
-    }];
+    [self animateTableContainerViewTopConstraintConstant:-60];
+    [_searchThisAreaButton setHidden:NO];
+
 }
 
 
+
+
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    return _places.count;
+    return [_viewModel numberOfRowsInSection];
 }
 
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     PlaceTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"PlaceTableViewCellIdentifier"];
     
-    Place *place = [self placeAtIndex:indexPath.row];
+    PlaceTableViewCellViewModel *cellViewModel = [_viewModel cellViewModel:indexPath];
     
-    cell.placeNameLabel.text = place.name ;
+    cell.viewModel = cellViewModel;
+    [cellViewModel setView:cell];
     
-    NSURL *placeImageURL = [NSURL URLWithString:place.thumbnailImageURL];
-    
-    [cell.placeImageView sd_setImageWithURL:placeImageURL];
+    [cell setUp];
     
     return cell;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
     
-    return 200;
+    return 180;
     
 }
 
@@ -148,13 +120,12 @@
 
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView{
     if (scrollView.contentOffset.y < 0) {
-        [UIView animateWithDuration:0.3 animations:^{
-            self->_tableContainerViewTopConstraint.constant = -60;
-            [self.view layoutIfNeeded];
-        }];
+        [self animateTableContainerViewTopConstraintConstant:-60];
+    }else if(scrollView.contentOffset.y > 0 && _tableContainerViewTopConstraint.constant == -250){
+        [self animateTableContainerViewTopConstraintConstant: -self->_tableContainerView.frame.size.height];
     }
+    
 }
-
 
 
 @end
@@ -163,11 +134,32 @@
 
 
 - (void)setUpGoogleMapView {
-    GMSCameraPosition *camera = [GMSCameraPosition cameraWithLatitude:1.3521 longitude:103.8198 zoom:13] ;
+    
+    _initialCoordinate = CLLocationCoordinate2DMake(1.2494, 103.8303);
+    
+    GMSCameraPosition *camera = [GMSCameraPosition cameraWithLatitude:_initialCoordinate.latitude longitude:_initialCoordinate.longitude zoom:13] ;
+    
+    NSBundle *mainBundle = [NSBundle mainBundle];
+    NSURL *styleUrl = [mainBundle URLForResource:@"style" withExtension:@"json"];
+    NSError *error;
+    
+    // Set the map style by passing the URL for style.json.
+    GMSMapStyle *style = [GMSMapStyle styleWithContentsOfFileURL:styleUrl error:&error];
+    
+    if (!style) {
+        NSLog(@"The style definition could not be loaded: %@", error);
+    }
+    
+    _googleMapView.mapStyle = style;
     
     [_googleMapView animateToCameraPosition:camera];
     
     _googleMapView.delegate = self;
+    
+    _googleMapView.settings.myLocationButton = YES;
+    
+    [_googleMapView setMyLocationEnabled:YES];
+
 }
 
 - (void)setUpTableContainerView{
@@ -196,6 +188,56 @@
     UISwipeGestureRecognizer *swipeDownGesture = [[UISwipeGestureRecognizer alloc]initWithTarget:self action:@selector(downSwipe:)];
     [swipeDownGesture setDirection:UISwipeGestureRecognizerDirectionDown];
     [_tableContainerView addGestureRecognizer:swipeDownGesture];
+    
+}
+
+- (void)clearGoogleMap{
+    [_googleMapView clear];
+}
+
+- (void)plotMarkerOnMap:(GMSMarker *)marker{
+    marker.icon = [UIImage imageNamed:@"redMarker"];
+    marker.map = _googleMapView;
+}
+
+- (void)reloadTableView{
+    [_tableView reloadData];
+    [self animateTableContainerViewTopConstraintConstant:-250];
+    [_searchThisAreaButton setHidden:YES];
+}
+
+- (void)setTitle{
+    
+    
+    dispatch_async(dispatch_get_main_queue(), ^{
+        
+        self.navigationItem.title = @"Explore Singapore";
+        
+        self.navigationController.navigationBar.prefersLargeTitles = YES;
+        
+        [self.navigationController.navigationBar setTranslucent:NO];
+        
+        [self.navigationController.navigationBar setTintColor:[UIColor colorWithRed:162.0f/255.0f green:162.0f/255.0f blue:157.0f/255.0f alpha:0.7f]];
+        
+        UINavigationBarAppearance *navigationBarAppearance = [self.navigationController.navigationBar standardAppearance];
+        
+        UIImage *backgroundImage = [UIImage imageNamed:@"singapore"];
+        
+        [navigationBarAppearance configureWithOpaqueBackground];
+        
+        [navigationBarAppearance setBackgroundImage:backgroundImage];
+        [navigationBarAppearance setBackgroundColor:[UIColor whiteColor]];
+        
+        
+        [navigationBarAppearance setLargeTitleTextAttributes:@{NSForegroundColorAttributeName:[UIColor redColor], NSFontAttributeName:[UIFont systemFontOfSize:34 weight:UIFontWeightSemibold]}];
+        
+        [self.navigationController.navigationBar setStandardAppearance:navigationBarAppearance];
+        [self.navigationController.navigationBar  setScrollEdgeAppearance:navigationBarAppearance];
+        
+        
+    });
+    
+    
     
 }
 
