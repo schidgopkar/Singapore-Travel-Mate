@@ -10,8 +10,11 @@
 		18D922EB35089642E9876D98 /* Pods_Singapore_Travel_Mate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 128E37128356071B2FA14C72 /* Pods_Singapore_Travel_Mate.framework */; };
 		32F6E0712CAE6F00A4B18C83 /* Pods_Singapore_Travel_Mate_Singapore_Travel_MateUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0566F44E3446C78C13D8C9E /* Pods_Singapore_Travel_Mate_Singapore_Travel_MateUITests.framework */; };
 		4716CDFD24C9BC1500B894D1 /* ServiceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4716CDFC24C9BC1500B894D1 /* ServiceController.m */; };
+		471B9C1424CEF12000CB141F /* ServiceControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 471B9C1324CEF12000CB141F /* ServiceControllerTests.m */; };
 		475B051E24CA0E2500B7F5A5 /* PlaceModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 475B051D24CA0E2500B7F5A5 /* PlaceModel.m */; };
 		475B052124CA1AFE00B7F5A5 /* ExploreSingaporeViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 475B052024CA1AFE00B7F5A5 /* ExploreSingaporeViewModel.m */; };
+		479A5A0124CF0AD5003B84AC /* MockNSURLSession.m in Sources */ = {isa = PBXBuildFile; fileRef = 479A5A0024CF0AD5003B84AC /* MockNSURLSession.m */; };
+		479A5A0424CF0E9D003B84AC /* MockNSURLSessionDataTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 479A5A0324CF0E9D003B84AC /* MockNSURLSessionDataTask.m */; };
 		479C603824CBB81200B75F95 /* style.json in Resources */ = {isa = PBXBuildFile; fileRef = 479C603724CBB81100B75F95 /* style.json */; };
 		47CFB56B24B9F09D000F20FF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 47CFB56A24B9F09D000F20FF /* AppDelegate.m */; };
 		47CFB56E24B9F09D000F20FF /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 47CFB56D24B9F09D000F20FF /* SceneDelegate.m */; };
@@ -22,7 +25,6 @@
 		47CFB57C24B9F0A5000F20FF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 47CFB57B24B9F0A5000F20FF /* main.m */; };
 		47CFB58624B9F0A7000F20FF /* Singapore_Travel_MateTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 47CFB58524B9F0A7000F20FF /* Singapore_Travel_MateTests.m */; };
 		47CFB59124B9F0A7000F20FF /* Singapore_Travel_MateUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 47CFB59024B9F0A7000F20FF /* Singapore_Travel_MateUITests.m */; };
-		47CFB5A024BA0AA2000F20FF /* SingaporeToursimBoardAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 47CFB59F24BA0AA1000F20FF /* SingaporeToursimBoardAPI.m */; };
 		47CFB5A324BA0B60000F20FF /* Place.m in Sources */ = {isa = PBXBuildFile; fileRef = 47CFB5A224BA0B60000F20FF /* Place.m */; };
 		47D47C2F24C9A10000024938 /* NSObject+NSURLSession_Protocol.m in Sources */ = {isa = PBXBuildFile; fileRef = 47D47C2E24C9A10000024938 /* NSObject+NSURLSession_Protocol.m */; };
 		47E6E14424BDA65F00F158EC /* PlaceTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 47E6E14324BDA65E00F158EC /* PlaceTableViewCell.m */; };
@@ -52,11 +54,16 @@
 		4716CDFA24C9BB5600B894D1 /* NSURLSessionProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSURLSessionProtocol.h; sourceTree = "<group>"; };
 		4716CDFB24C9BC1500B894D1 /* ServiceController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ServiceController.h; sourceTree = "<group>"; };
 		4716CDFC24C9BC1500B894D1 /* ServiceController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ServiceController.m; sourceTree = "<group>"; };
+		471B9C1324CEF12000CB141F /* ServiceControllerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ServiceControllerTests.m; sourceTree = "<group>"; };
 		475B051C24CA0E2500B7F5A5 /* PlaceModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PlaceModel.h; sourceTree = "<group>"; };
 		475B051D24CA0E2500B7F5A5 /* PlaceModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PlaceModel.m; sourceTree = "<group>"; };
 		475B051F24CA1AFE00B7F5A5 /* ExploreSingaporeViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ExploreSingaporeViewModel.h; sourceTree = "<group>"; };
 		475B052024CA1AFE00B7F5A5 /* ExploreSingaporeViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExploreSingaporeViewModel.m; sourceTree = "<group>"; };
 		475B052224CA1B4F00B7F5A5 /* ExploreSingaporeViewControllerProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ExploreSingaporeViewControllerProtocol.h; sourceTree = "<group>"; };
+		479A59FF24CF0AD5003B84AC /* MockNSURLSession.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MockNSURLSession.h; sourceTree = "<group>"; };
+		479A5A0024CF0AD5003B84AC /* MockNSURLSession.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MockNSURLSession.m; sourceTree = "<group>"; };
+		479A5A0224CF0E9D003B84AC /* MockNSURLSessionDataTask.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MockNSURLSessionDataTask.h; sourceTree = "<group>"; };
+		479A5A0324CF0E9D003B84AC /* MockNSURLSessionDataTask.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MockNSURLSessionDataTask.m; sourceTree = "<group>"; };
 		479C603724CBB81100B75F95 /* style.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = style.json; sourceTree = "<group>"; };
 		47CFB56624B9F09D000F20FF /* Singapore Travel Mate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Singapore Travel Mate.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		47CFB56924B9F09D000F20FF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -76,8 +83,6 @@
 		47CFB58C24B9F0A7000F20FF /* Singapore Travel MateUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Singapore Travel MateUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		47CFB59024B9F0A7000F20FF /* Singapore_Travel_MateUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Singapore_Travel_MateUITests.m; sourceTree = "<group>"; };
 		47CFB59224B9F0A7000F20FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		47CFB59E24BA0AA1000F20FF /* SingaporeToursimBoardAPI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SingaporeToursimBoardAPI.h; sourceTree = "<group>"; };
-		47CFB59F24BA0AA1000F20FF /* SingaporeToursimBoardAPI.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SingaporeToursimBoardAPI.m; sourceTree = "<group>"; };
 		47CFB5A124BA0B60000F20FF /* Place.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Place.h; sourceTree = "<group>"; };
 		47CFB5A224BA0B60000F20FF /* Place.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Place.m; sourceTree = "<group>"; };
 		47D47C2D24C9A10000024938 /* NSObject+NSURLSession_Protocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+NSURLSession_Protocol.h"; sourceTree = "<group>"; };
@@ -204,6 +209,17 @@
 			path = Protocols;
 			sourceTree = "<group>";
 		};
+		479A59FE24CF0A9B003B84AC /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				479A59FF24CF0AD5003B84AC /* MockNSURLSession.h */,
+				479A5A0024CF0AD5003B84AC /* MockNSURLSession.m */,
+				479A5A0224CF0E9D003B84AC /* MockNSURLSessionDataTask.h */,
+				479A5A0324CF0E9D003B84AC /* MockNSURLSessionDataTask.m */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
 		47CFB55D24B9F09C000F20FF = {
 			isa = PBXGroup;
 			children = (
@@ -239,8 +255,6 @@
 				47CFB57A24B9F0A5000F20FF /* Info.plist */,
 				47CFB57B24B9F0A5000F20FF /* main.m */,
 				475B052324CA1D2E00B7F5A5 /* Explore Singapore Tab */,
-				47CFB59E24BA0AA1000F20FF /* SingaporeToursimBoardAPI.h */,
-				47CFB59F24BA0AA1000F20FF /* SingaporeToursimBoardAPI.m */,
 				4716CDFB24C9BC1500B894D1 /* ServiceController.h */,
 				4716CDFC24C9BC1500B894D1 /* ServiceController.m */,
 				479C603724CBB81100B75F95 /* style.json */,
@@ -251,8 +265,10 @@
 		47CFB58424B9F0A7000F20FF /* Singapore Travel MateTests */ = {
 			isa = PBXGroup;
 			children = (
+				479A59FE24CF0A9B003B84AC /* Mocks */,
 				47CFB58524B9F0A7000F20FF /* Singapore_Travel_MateTests.m */,
 				47CFB58724B9F0A7000F20FF /* Info.plist */,
+				471B9C1324CEF12000CB141F /* ServiceControllerTests.m */,
 			);
 			path = "Singapore Travel MateTests";
 			sourceTree = "<group>";
@@ -542,7 +558,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				47CFB57124B9F09D000F20FF /* ExploreSingaporeViewController.m in Sources */,
-				47CFB5A024BA0AA2000F20FF /* SingaporeToursimBoardAPI.m in Sources */,
 				4716CDFD24C9BC1500B894D1 /* ServiceController.m in Sources */,
 				475B051E24CA0E2500B7F5A5 /* PlaceModel.m in Sources */,
 				47F05D0324CAF67B002DDA87 /* PlaceTableViewCellViewModel.m in Sources */,
@@ -560,7 +575,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				479A5A0424CF0E9D003B84AC /* MockNSURLSessionDataTask.m in Sources */,
 				47CFB58624B9F0A7000F20FF /* Singapore_Travel_MateTests.m in Sources */,
+				479A5A0124CF0AD5003B84AC /* MockNSURLSession.m in Sources */,
+				471B9C1424CEF12000CB141F /* ServiceControllerTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -7,7 +7,6 @@
 //
 
 #import "ExploreSingaporeViewController.h"
-#import "SingaporeToursimBoardAPI.h"
 #import "Place.h"
 #import <QuartzCore/QuartzCore.h>
 #import <SDWebImage/SDWebImage.h>
