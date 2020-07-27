@@ -35,8 +35,12 @@
     _places = places;
     
     dispatch_async(dispatch_get_main_queue(), ^{
-           [self plotPlacesMarkersOnMap];
-        [self->_view reloadTableView];
+        if (!self->_places) {
+            [self->_view displayNoPlacesFoundAlert];
+        }else{
+            [self plotPlacesMarkersOnMap];
+            [self->_view reloadTableView];
+        }
     });
     
 }
@@ -44,7 +48,7 @@
 
 - (void)performInitialSetup{
     
-    [_view setTitle];
+    [_view setUpNavBar];
     [_view setUpGoogleMapView];
     [_view setUpTableContainerView];
     [_view setUpGestureRecognizers];
@@ -56,7 +60,9 @@
     
     NSString *location = [NSString stringWithFormat:@"%f,%f",coordinate.latitude, coordinate.longitude];
     
-    [_placeModel fetchPlacesNearLocation:location];
+    NSString *defaultRadiusString = @"5000";
+    
+    [_placeModel fetchPlacesNearLocation:location withRadius:defaultRadiusString];
 }
 
 
@@ -68,10 +74,30 @@
     
 }
 
+-(void)calculateRadiusOfVisibleRegionOnGoogleMap:(GMSMapView*)mapview{
+    CGPoint centerPoint = mapview.center;
+
+    CLLocationCoordinate2D centerCoordinate = [[mapview projection]coordinateForPoint:centerPoint];
+    
+    CGPoint topCenter = CGPointMake(mapview.frame.size.width / 2.0, 0);
+    
+    CGPoint topCenterPoint = [mapview convertPoint:topCenter fromView:mapview];
+    
+    CLLocationCoordinate2D topCenterCoodinate = [[mapview projection]coordinateForPoint:topCenterPoint];
+    
+    CLLocation *centerLocation = [[CLLocation alloc]initWithLatitude:centerCoordinate.latitude longitude:centerCoordinate.longitude];
+    CLLocation *topCenterLocation = [[CLLocation alloc]initWithLatitude:topCenterCoodinate.latitude longitude:topCenterCoodinate.longitude];
+    
+    CLLocationDistance radius = [centerLocation distanceFromLocation:topCenterLocation];
+    
+    _radiusString = [NSString stringWithFormat:@"%d", (int)(radius)]  ;
+    
+}
+
 
 - (void)searchThisAreaButtonTapped{
     
-    [_placeModel fetchPlacesNearLocation:_searchLocationString];
+    [_placeModel fetchPlacesNearLocation:_searchLocationString withRadius:_radiusString];
 }
 
 -(void)plotPlacesMarkersOnMap{

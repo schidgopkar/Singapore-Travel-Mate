@@ -19,7 +19,8 @@
 -(void)reloadTableView;
 -(void)clearGoogleMap;
 -(void)plotMarkerOnMap:(GMSMarker*)marker;
--(void)setTitle;
+-(void)setUpNavBar;
+-(void)displayNoPlacesFoundAlert;
 
 @end
 

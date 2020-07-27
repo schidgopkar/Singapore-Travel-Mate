@@ -19,12 +19,14 @@
 @property(nonatomic, weak) id <ExploreSingaporeViewControllerProtocol> view;
 @property(nonatomic, strong) PlaceModel *placeModel;
 @property(nonatomic, strong) NSString *searchLocationString;
+@property(nonatomic, strong) NSString *radiusString;
 @property(nonatomic, strong) NSArray *places;
 
 -(instancetype)initWithView:(id <ExploreSingaporeViewControllerProtocol>)view;
 -(void)performInitialSetup;
 -(void)searchThisAreaButtonTapped;
 -(void)googleMapViewLoadedWithLocation:(CLLocationCoordinate2D)coordinate;
+-(void)calculateRadiusOfVisibleRegionOnGoogleMap:(GMSMapView*)mapview;
 - (void)googleMapViewIdleAtCameraPositon:(GMSCameraPosition*)position;
 -(void)plotPlacesMarkersOnMap;
 -(PlaceTableViewCellViewModel *)cellViewModel:(NSIndexPath*)indexPath;

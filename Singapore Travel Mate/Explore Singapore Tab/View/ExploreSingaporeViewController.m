@@ -47,6 +47,7 @@
 
 - (void)mapView:(GMSMapView *)mapView idleAtCameraPosition:(GMSCameraPosition *)position{
     [_viewModel googleMapViewIdleAtCameraPositon:position];
+    [_viewModel calculateRadiusOfVisibleRegionOnGoogleMap:mapView];
     
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
@@ -135,7 +136,7 @@
 
 - (void)setUpGoogleMapView {
     
-    _initialCoordinate = CLLocationCoordinate2DMake(1.2494, 103.8303);
+    _initialCoordinate = CLLocationCoordinate2DMake(1.282203,103.863539);
     
     GMSCameraPosition *camera = [GMSCameraPosition cameraWithLatitude:_initialCoordinate.latitude longitude:_initialCoordinate.longitude zoom:13] ;
     
@@ -206,7 +207,7 @@
     [_searchThisAreaButton setHidden:YES];
 }
 
-- (void)setTitle{
+- (void)setUpNavBar{
     
     
     dispatch_async(dispatch_get_main_queue(), ^{
@@ -238,6 +239,20 @@
     });
     
     
+    
+    
+}
+
+- (void)displayNoPlacesFoundAlert{
+    
+    UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"No Places Found" message:@"No places found for this area. Please try searching in another area." preferredStyle:UIAlertControllerStyleAlert];
+    
+    UIAlertAction *okAction = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {}];
+    [alertController.view setTintColor:[UIColor systemRedColor]];
+    
+    [alertController addAction:okAction];
+    
+    [self presentViewController:alertController animated:YES completion:nil];
     
 }
 

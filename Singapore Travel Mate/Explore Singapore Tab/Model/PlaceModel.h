@@ -25,7 +25,7 @@
 @property(nonatomic, weak) id <PlaceModelProtocol> placeDownloadDelegate;
 
 
--(void)fetchPlacesNearLocation:(NSString*)location;
+-(void)fetchPlacesNearLocation:(NSString*)location withRadius:(NSString*)radius;
 
 @end
 
