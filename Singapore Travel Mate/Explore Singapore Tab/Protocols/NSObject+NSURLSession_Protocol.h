@@ -15,6 +15,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 
 
+- (NSURLSessionDataTask *)dataTaskWithURL:(NSURL *)url completionHandler:(void (^)(NSData *, NSURLResponse *, NSError *))completionHandler;
+
 @end
 
 NS_ASSUME_NONNULL_END

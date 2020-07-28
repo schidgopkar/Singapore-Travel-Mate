@@ -13,6 +13,7 @@
 		471B9C1424CEF12000CB141F /* ServiceControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 471B9C1324CEF12000CB141F /* ServiceControllerTests.m */; };
 		475B051E24CA0E2500B7F5A5 /* PlaceModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 475B051D24CA0E2500B7F5A5 /* PlaceModel.m */; };
 		475B052124CA1AFE00B7F5A5 /* ExploreSingaporeViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 475B052024CA1AFE00B7F5A5 /* ExploreSingaporeViewModel.m */; };
+		4778A96924D05EA3007F6EDA /* MockServiceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4778A96824D05EA3007F6EDA /* MockServiceController.m */; };
 		479A5A0124CF0AD5003B84AC /* MockNSURLSession.m in Sources */ = {isa = PBXBuildFile; fileRef = 479A5A0024CF0AD5003B84AC /* MockNSURLSession.m */; };
 		479A5A0424CF0E9D003B84AC /* MockNSURLSessionDataTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 479A5A0324CF0E9D003B84AC /* MockNSURLSessionDataTask.m */; };
 		479C603824CBB81200B75F95 /* style.json in Resources */ = {isa = PBXBuildFile; fileRef = 479C603724CBB81100B75F95 /* style.json */; };
@@ -60,6 +61,8 @@
 		475B051F24CA1AFE00B7F5A5 /* ExploreSingaporeViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ExploreSingaporeViewModel.h; sourceTree = "<group>"; };
 		475B052024CA1AFE00B7F5A5 /* ExploreSingaporeViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExploreSingaporeViewModel.m; sourceTree = "<group>"; };
 		475B052224CA1B4F00B7F5A5 /* ExploreSingaporeViewControllerProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ExploreSingaporeViewControllerProtocol.h; sourceTree = "<group>"; };
+		4778A96724D05EA3007F6EDA /* MockServiceController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MockServiceController.h; sourceTree = "<group>"; };
+		4778A96824D05EA3007F6EDA /* MockServiceController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MockServiceController.m; sourceTree = "<group>"; };
 		479A59FF24CF0AD5003B84AC /* MockNSURLSession.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MockNSURLSession.h; sourceTree = "<group>"; };
 		479A5A0024CF0AD5003B84AC /* MockNSURLSession.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MockNSURLSession.m; sourceTree = "<group>"; };
 		479A5A0224CF0E9D003B84AC /* MockNSURLSessionDataTask.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MockNSURLSessionDataTask.h; sourceTree = "<group>"; };
@@ -216,6 +219,8 @@
 				479A5A0024CF0AD5003B84AC /* MockNSURLSession.m */,
 				479A5A0224CF0E9D003B84AC /* MockNSURLSessionDataTask.h */,
 				479A5A0324CF0E9D003B84AC /* MockNSURLSessionDataTask.m */,
+				4778A96724D05EA3007F6EDA /* MockServiceController.h */,
+				4778A96824D05EA3007F6EDA /* MockServiceController.m */,
 			);
 			path = Mocks;
 			sourceTree = "<group>";
@@ -575,6 +580,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4778A96924D05EA3007F6EDA /* MockServiceController.m in Sources */,
 				479A5A0424CF0E9D003B84AC /* MockNSURLSessionDataTask.m in Sources */,
 				47CFB58624B9F0A7000F20FF /* Singapore_Travel_MateTests.m in Sources */,
 				479A5A0124CF0AD5003B84AC /* MockNSURLSession.m in Sources */,

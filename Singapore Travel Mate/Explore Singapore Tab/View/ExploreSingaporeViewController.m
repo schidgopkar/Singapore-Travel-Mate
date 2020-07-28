@@ -33,13 +33,6 @@
     
 }
 
-- (void)viewDidAppear:(BOOL)animated{
-    [super viewDidAppear:YES];
-    
-    
-}
-
-
 - (IBAction)searchThisAreaButtonTapped:(UIButton *)sender {
     [_viewModel searchThisAreaButtonTapped];
 }
