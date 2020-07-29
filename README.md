@@ -2,6 +2,18 @@
 
 iOS app that uses Singapore Tourism Board's API to find tourist attractions and POIs in Singapore, developed with XCode 12 beta and Objective-c. This app makes use of MVVM Design pattern implemented using protocols. 
 
+**Getting the API Keys**
+
+[Google Maps API Key](https://developers.google.com/maps/documentation/ios-sdk/get-api-key)
+
+[Singapore Tourism Board's API Key](https://tih-dev.stb.gov.sg/getting-started)
+
+**Installing**
+
+1. Install pods by using 'pod install' on the project directory in terminal
+
+2. Find APIKeys.plist file in the project and open it. Add your Google Maps API key and Singapore Tourism Board's API key in  the appropriate empty fields. 
+
 
 ![Screenshot 2020-07-28 at 5 24 54 AM](https://user-images.githubusercontent.com/28370962/88594025-13d94f00-d093-11ea-86bd-33a6b3aaacf3.png)
 ![Screenshot 2020-07-28 at 5 25 54 AM](https://user-images.githubusercontent.com/28370962/88594060-205da780-d093-11ea-8827-a4737757b630.png)
