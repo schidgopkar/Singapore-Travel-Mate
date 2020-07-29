@@ -20,7 +20,15 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     
-    [GMSServices provideAPIKey:@"AIzaSyDziRtN98uwbfSt2b_rtJtbvXdTApvB458"];
+    NSDictionary *keys;
+    
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"APIKeys" ofType:@"plist"];
+    
+    keys = [NSDictionary dictionaryWithContentsOfFile:path];
+    
+    NSString *googleMapsAPIKey = [keys objectForKey:@"googleMapsAPIKey"];
+    
+    [GMSServices provideAPIKey:googleMapsAPIKey];
     
     
     return YES;

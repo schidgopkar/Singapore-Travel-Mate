@@ -9,12 +9,6 @@
 #import "ExploreSingaporeViewModel.h"
 
 
-
-@interface ExploreSingaporeViewModel () <PlaceModelProtocol>
-
-@end
-
-
 @implementation ExploreSingaporeViewModel
 
 

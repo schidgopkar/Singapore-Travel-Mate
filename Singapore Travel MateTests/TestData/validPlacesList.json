@@ -1,0 +1,1159 @@
+{
+    "status": {
+        "code": 200,
+        "message": "OK",
+        "errorDetail": ""
+    },
+    "data": [
+        {
+            "supportedLanguage": [
+                "EN"
+            ],
+            "rating": 4.5,
+            "uuid": "002d103906c99254017a1ab78c363d47464",
+            "categoryDescription": "Attractions",
+            "formattedAddress": "",
+            "thumbnails": [
+                {
+                    "uuid": "",
+                    "libraryUuid": "",
+                    "url": "draft/20190305172718/DSC_GMS 27.jpg",
+                    "primaryFileMediumUuid": ""
+                }
+            ],
+            "images": [
+                {
+                    "uuid": "",
+                    "libraryUuid": "AEM999_ae062fc825464d599fd7c39bc4d57a6a",
+                    "url": "draft/20190305172718/DSC_GMS 27.jpg",
+                    "primaryFileMediumUuid": ""
+                }
+            ],
+            "startDate": null,
+            "metadata": {
+                "createdDate": "2019-05-24T17:08:53Z",
+                "updatedDate": "2019-05-24T17:08:53Z"
+            },
+            "endDate": null,
+            "tags": [
+                "Indoors",
+                "North",
+                "Attractions"
+            ],
+            "source": "stb",
+            "address": {
+                "block": "",
+                "streetName": "88 Bright Hill Road",
+                "floorNumber": "",
+                "unitNumber": "",
+                "buildingName": "",
+                "postalCode": "574117"
+            },
+            "name": "Kong Meng San Phor Kark See Monastery",
+            "location": {
+                "latitude": 1.361516,
+                "longitude": 103.835812
+            }
+        },
+        {
+            "supportedLanguage": [
+                "EN"
+            ],
+            "rating": 4.5,
+            "uuid": "0023e6d162bfc0842dfad98e7e5bca18fbc",
+            "categoryDescription": "Attractions",
+            "formattedAddress": "",
+            "thumbnails": [
+                {
+                    "uuid": "107b3cbf51a7ec948c2a1a726aa26a59e80",
+                    "libraryUuid": "1046ef2a9d019a647dfa73e9569e6007a0d",
+                    "url": "",
+                    "primaryFileMediumUuid": "107b3cbf51a7ec948c2a1a726aa26a59e80"
+                }
+            ],
+            "images": [
+                {
+                    "uuid": "101e17bf08cb1074935a150fd573d5fc388",
+                    "libraryUuid": "1046ef2a9d019a647dfa73e9569e6007a0d",
+                    "url": "",
+                    "primaryFileMediumUuid": "107b3cbf51a7ec948c2a1a726aa26a59e80"
+                }
+            ],
+            "startDate": null,
+            "metadata": {
+                "createdDate": "2017-10-28T03:00:00Z",
+                "updatedDate": "2020-02-25T20:32:46Z"
+            },
+            "endDate": null,
+            "tags": [
+                "Architecture",
+                "Central",
+                "Free admission",
+                "Outdoors",
+                "Families",
+                "Attractions",
+                "Kids",
+                "Sunset",
+                "Bishan",
+                "Wildlife",
+                "Adults",
+                "Group of People",
+                "Lifestyles",
+                "Parks and Gardens"
+            ],
+            "source": "stb",
+            "address": {
+                "block": "",
+                "streetName": "Along Lornie Road",
+                "floorNumber": "",
+                "unitNumber": "",
+                "buildingName": "",
+                "postalCode": "298735"
+            },
+            "name": "Central Catchment Nature Reserve and MacRitchie Reservoir Park",
+            "location": {
+                "latitude": 1.3417972,
+                "longitude": 103.8332375
+            }
+        },
+        {
+            "supportedLanguage": [
+                "EN"
+            ],
+            "rating": 4.4,
+            "uuid": "00281ff36ca80904371b2718e57cf959771",
+            "categoryDescription": "Attractions",
+            "formattedAddress": "",
+            "thumbnails": [
+                {
+                    "uuid": "107f12dabb814bc4b5680f458b8a75708c6",
+                    "libraryUuid": "10409dcacddcc2f46c6bd91e12859764119",
+                    "url": "",
+                    "primaryFileMediumUuid": ""
+                }
+            ],
+            "images": [
+                {
+                    "uuid": "101e42b253a4c6644009e73b3c9aff8c8f8",
+                    "libraryUuid": "10409dcacddcc2f46c6bd91e12859764119",
+                    "url": "",
+                    "primaryFileMediumUuid": ""
+                }
+            ],
+            "startDate": null,
+            "metadata": {
+                "createdDate": "2017-09-28T07:35:00Z",
+                "updatedDate": "2019-07-18T12:08:52Z"
+            },
+            "endDate": null,
+            "tags": [
+                "Indoors",
+                "Memorials",
+                "Toa Payoh",
+                "Central",
+                "Museums",
+                "Attractions",
+                "Galleries"
+            ],
+            "source": "stb",
+            "address": {
+                "block": "12",
+                "streetName": "Tai Gin Road",
+                "floorNumber": "",
+                "unitNumber": "",
+                "buildingName": "",
+                "postalCode": "327874"
+            },
+            "name": "Sun Yat Sen Nanyang Memorial Hall",
+            "location": {
+                "latitude": 1.3280736,
+                "longitude": 103.8471167
+            }
+        },
+        {
+            "supportedLanguage": [
+                "EN"
+            ],
+            "rating": 4.1,
+            "uuid": "002e6f0baf871304857b4bdf8d6560250b8",
+            "categoryDescription": "Attractions",
+            "formattedAddress": "",
+            "thumbnails": [
+                {
+                    "uuid": "10196dfb9fca95746ad9caa09b42737d7a9",
+                    "libraryUuid": "1044b1151eb9a6e4adf8b9b2dbe77c43d4b",
+                    "url": "",
+                    "primaryFileMediumUuid": "10196dfb9fca95746ad9caa09b42737d7a9"
+                }
+            ],
+            "images": [
+                {
+                    "uuid": "10120f7794e35ee40d580eb9eab3527e51f",
+                    "libraryUuid": "1044b1151eb9a6e4adf8b9b2dbe77c43d4b",
+                    "url": "",
+                    "primaryFileMediumUuid": "10196dfb9fca95746ad9caa09b42737d7a9"
+                },
+                {
+                    "uuid": "10157a27300ab614682a9b6399facd3e95e",
+                    "libraryUuid": "104d4ac9e05f229428d98e811de0adb3080",
+                    "url": "",
+                    "primaryFileMediumUuid": "1012c975a6d7ac54e3c8c1dc07a6b39a3c6"
+                },
+                {
+                    "uuid": "10142ce5d2ab0ae40ee85e2e9922eede04b",
+                    "libraryUuid": "10456a3fd0878cc4f41baa64c5cfafeae8c",
+                    "url": "",
+                    "primaryFileMediumUuid": "1012c132141088f4dc68867864f63890bb6"
+                }
+            ],
+            "startDate": null,
+            "metadata": {
+                "createdDate": "2020-04-13T16:11:17Z",
+                "updatedDate": "2020-04-13T16:11:17Z"
+            },
+            "endDate": null,
+            "tags": [
+                "Nature",
+                "Animals",
+                "Education",
+                "Museums"
+            ],
+            "source": "THE LIVE TURTLE & TORTOISE MUSEUM",
+            "address": {
+                "block": "-",
+                "streetName": "81 Lorong Chencharu",
+                "floorNumber": "01",
+                "unitNumber": "16",
+                "buildingName": "Orto",
+                "postalCode": "769198"
+            },
+            "name": "The Live Turtle and Tortoise Museum",
+            "location": {
+                "latitude": 1.413954,
+                "longitude": 103.829253
+            }
+        },
+        {
+            "supportedLanguage": [
+                "EN"
+            ],
+            "rating": 0,
+            "uuid": "002bdcc451049c149869c8e1d424dbf7f4e",
+            "categoryDescription": "Attractions",
+            "formattedAddress": "",
+            "thumbnails": [
+                {
+                    "uuid": "101e33c3e6b7edb48ff9009c53adadead93",
+                    "libraryUuid": "",
+                    "url": "",
+                    "primaryFileMediumUuid": ""
+                }
+            ],
+            "images": [
+                {
+                    "uuid": "10106cb18e29854470eaddd8df407b1b5a7",
+                    "libraryUuid": "",
+                    "url": "",
+                    "primaryFileMediumUuid": ""
+                },
+                {
+                    "uuid": "101716b4731817e45a883866a6d21d0a0f3",
+                    "libraryUuid": "",
+                    "url": "",
+                    "primaryFileMediumUuid": ""
+                }
+            ],
+            "startDate": null,
+            "metadata": {
+                "createdDate": "2018-07-17T00:30:44Z",
+                "updatedDate": "2018-11-12T14:18:04Z"
+            },
+            "endDate": null,
+            "tags": [
+                "Indoors",
+                "Local Brands",
+                "Group of People",
+                "Lifestyles",
+                "Workshops",
+                "Attractions"
+            ],
+            "source": "TYPESETTINGSG",
+            "address": {
+                "block": "",
+                "streetName": "5001 Beach Road",
+                "floorNumber": "06",
+                "unitNumber": "62",
+                "buildingName": "Golden Mile Complex",
+                "postalCode": "199588"
+            },
+            "name": "Traditional Letterpress printing",
+            "location": {
+                "latitude": 1.3276109,
+                "longitude": 103.873769
+            }
+        },
+        {
+            "supportedLanguage": [
+                "EN"
+            ],
+            "rating": 4.4,
+            "uuid": "002668f1fdad7d5404aa8551e6f44b84500",
+            "categoryDescription": "Attractions",
+            "formattedAddress": "",
+            "thumbnails": [
+                {
+                    "uuid": "101c66168185ce84177adb8a19cf261a5d0",
+                    "libraryUuid": "104e82fedfbb5e24292aa5ee7abba90691a",
+                    "url": "",
+                    "primaryFileMediumUuid": ""
+                }
+            ],
+            "images": [
+                {
+                    "uuid": "1019582e93199844ebdafe66ea1acdb2a20",
+                    "libraryUuid": "104e82fedfbb5e24292aa5ee7abba90691a",
+                    "url": "",
+                    "primaryFileMediumUuid": ""
+                },
+                {
+                    "uuid": "101e83a48aa11274ec88222b4a7905c1390",
+                    "libraryUuid": "104b62585981983469b95714bf3b5fa1b48",
+                    "url": "",
+                    "primaryFileMediumUuid": ""
+                },
+                {
+                    "uuid": "1010d3c3b2c9c3e4d19b173159895ae3270",
+                    "libraryUuid": "10407c7c2121cc345c9af8169a439f54306",
+                    "url": "",
+                    "primaryFileMediumUuid": ""
+                },
+                {
+                    "uuid": "10140ea22563d944f69a7dd89a250890320",
+                    "libraryUuid": "104bd9b1490399b460f94dd6143c403033a",
+                    "url": "",
+                    "primaryFileMediumUuid": ""
+                },
+                {
+                    "uuid": "10144d3147290724a9981a85e5f797343bc",
+                    "libraryUuid": "104c4883107903e4905ad4d0b0ec6b9c07f",
+                    "url": "",
+                    "primaryFileMediumUuid": ""
+                }
+            ],
+            "startDate": null,
+            "metadata": {
+                "createdDate": "2019-04-16T16:16:11Z",
+                "updatedDate": "2019-04-16T16:22:10Z"
+            },
+            "endDate": null,
+            "tags": [
+                "Indoors",
+                "Local Brands",
+                "Little India",
+                "Shopping",
+                "Families",
+                "Attractions"
+            ],
+            "source": "ULTIMATE AIRZONE PTE. LTD.",
+            "address": {
+                "block": "180",
+                "streetName": "Kitchener Road",
+                "floorNumber": "02",
+                "unitNumber": "K2/K4",
+                "buildingName": "City Square Mall",
+                "postalCode": "208539"
+            },
+            "name": "AIRZONE",
+            "location": {
+                "latitude": 1.3113954,
+                "longitude": 103.8568953
+            }
+        },
+        {
+            "supportedLanguage": [
+                "EN"
+            ],
+            "rating": 4.6,
+            "uuid": "002db30d91717ff4da4ada6168ed18b6fe2",
+            "categoryDescription": "Attractions",
+            "formattedAddress": "",
+            "thumbnails": [],
+            "images": [],
+            "startDate": null,
+            "metadata": {
+                "createdDate": "2020-03-18T19:44:21Z",
+                "updatedDate": "2020-03-23T05:02:20Z"
+            },
+            "endDate": null,
+            "tags": [
+                "Architecture",
+                "Tourists",
+                "History",
+                "Culture"
+            ],
+            "source": "HALALTRIP PTE. LTD.",
+            "address": {
+                "block": "",
+                "streetName": "265 Serangoon Road",
+                "floorNumber": "",
+                "unitNumber": "",
+                "buildingName": "",
+                "postalCode": "218099"
+            },
+            "name": "Angullia Mosque",
+            "location": {
+                "latitude": 1.310648,
+                "longitude": 103.854144
+            }
+        },
+        {
+            "supportedLanguage": [
+                "EN"
+            ],
+            "rating": 4.6,
+            "uuid": "002f49ffec200884daea17acd6516e8238d",
+            "categoryDescription": "Attractions",
+            "formattedAddress": "",
+            "thumbnails": [
+                {
+                    "uuid": "1017c8ecd9d1b174f1f8859610716a642b8",
+                    "libraryUuid": "104413b0153e64c44588b4a05df311f167f",
+                    "url": "",
+                    "primaryFileMediumUuid": ""
+                }
+            ],
+            "images": [
+                {
+                    "uuid": "101f025af2c41984fcbac8507d064a6fbe0",
+                    "libraryUuid": "104413b0153e64c44588b4a05df311f167f",
+                    "url": "",
+                    "primaryFileMediumUuid": ""
+                }
+            ],
+            "startDate": null,
+            "metadata": {
+                "createdDate": "2017-09-28T07:35:00Z",
+                "updatedDate": "2019-05-24T15:51:22Z"
+            },
+            "endDate": null,
+            "tags": [
+                "Indoors",
+                "Architecture",
+                "Little India",
+                "Central",
+                "Free admission",
+                "Attractions"
+            ],
+            "source": "stb",
+            "address": {
+                "block": "141",
+                "streetName": "Serangoon Road",
+                "floorNumber": "",
+                "unitNumber": "",
+                "buildingName": "",
+                "postalCode": "218042"
+            },
+            "name": "Sri Veeramakaliamman Temple",
+            "location": {
+                "latitude": 1.3078831,
+                "longitude": 103.8524431
+            }
+        },
+        {
+            "supportedLanguage": [
+                "EN"
+            ],
+            "rating": 0,
+            "uuid": "002808faa73048e43d29b5fd7c5c356f9c8",
+            "categoryDescription": "Attractions",
+            "formattedAddress": "",
+            "thumbnails": [],
+            "images": [],
+            "startDate": null,
+            "metadata": {
+                "createdDate": "2020-07-18T00:32:03Z",
+                "updatedDate": "2020-07-18T00:32:03Z"
+            },
+            "endDate": null,
+            "tags": [
+                "Contemporary Arts",
+                "Little India",
+                "Workshops",
+                "Arts"
+            ],
+            "source": "stb",
+            "address": {
+                "block": "",
+                "streetName": "85 Maude Rd",
+                "floorNumber": "",
+                "unitNumber": "",
+                "buildingName": "",
+                "postalCode": "208357"
+            },
+            "name": "Mud Rock Ceramics",
+            "location": {
+                "latitude": 1.308494,
+                "longitude": 103.857877
+            }
+        },
+        {
+            "supportedLanguage": [
+                "EN"
+            ],
+            "rating": 0,
+            "uuid": "0029fbe6c07198945a9923f073d56308bf2",
+            "categoryDescription": "Attractions",
+            "formattedAddress": "",
+            "thumbnails": [
+                {
+                    "uuid": "101690b1999a34a45c5865c0c0d5bb1dc68",
+                    "libraryUuid": "104359f1e6eba82485988288ab0121bcbe0",
+                    "url": "",
+                    "primaryFileMediumUuid": "101690b1999a34a45c5865c0c0d5bb1dc68"
+                }
+            ],
+            "images": [
+                {
+                    "uuid": "1015af9dfc643d04e18b3c49addd9589a91",
+                    "libraryUuid": "104359f1e6eba82485988288ab0121bcbe0",
+                    "url": "",
+                    "primaryFileMediumUuid": "101690b1999a34a45c5865c0c0d5bb1dc68"
+                },
+                {
+                    "uuid": "101dd216de1b4474a3a8a9df1293f891823",
+                    "libraryUuid": "1046f4da4d897e64c189d381546be158273",
+                    "url": "",
+                    "primaryFileMediumUuid": "1011919058ce53a4ac389005cff9c0aaff6"
+                },
+                {
+                    "uuid": "1019b97f659b50c4dc9a6f0af7f1e0a7991",
+                    "libraryUuid": "104bc2f19c11ab74725a5a837d3fbdbe3da",
+                    "url": "",
+                    "primaryFileMediumUuid": "1072a263da1b9d0402ca73de9c0a26f606d"
+                },
+                {
+                    "uuid": "101a18cf962f39442bb84b62afe90cf86ff",
+                    "libraryUuid": "1046c8596c4aa824186a36fe3006d254120",
+                    "url": "",
+                    "primaryFileMediumUuid": "101a6a1606e686d465cbc9b56d1f5103ade"
+                }
+            ],
+            "startDate": null,
+            "metadata": {
+                "createdDate": "2020-07-18T00:28:01Z",
+                "updatedDate": "2020-07-18T00:28:01Z"
+            },
+            "endDate": null,
+            "tags": [
+                "Little India",
+                "History",
+                "Attractions",
+                "Culture",
+                "Arts"
+            ],
+            "source": "stb",
+            "address": {
+                "block": "",
+                "streetName": "37 Kerbau Road",
+                "floorNumber": "",
+                "unitNumber": "",
+                "buildingName": "",
+                "postalCode": "219168"
+            },
+            "name": "House of Tan Teng Niah",
+            "location": {
+                "latitude": 1.307089,
+                "longitude": 103.850839
+            }
+        },
+        {
+            "supportedLanguage": [
+                "EN"
+            ],
+            "rating": 4.7,
+            "uuid": "002f5051bfa31074cc8a34a49082d9001fa",
+            "categoryDescription": "Attractions",
+            "formattedAddress": "",
+            "thumbnails": [
+                {
+                    "uuid": "107a6e52ca1575d4cde92e0e5672de6fa9d",
+                    "libraryUuid": "104da49f2130dfa42f5a2492264cc364d35",
+                    "url": "",
+                    "primaryFileMediumUuid": "107a6e52ca1575d4cde92e0e5672de6fa9d"
+                }
+            ],
+            "images": [
+                {
+                    "uuid": "1016ce7612e55e3429b9ec26ec2a24fd566",
+                    "libraryUuid": "104da49f2130dfa42f5a2492264cc364d35",
+                    "url": "",
+                    "primaryFileMediumUuid": "107a6e52ca1575d4cde92e0e5672de6fa9d"
+                }
+            ],
+            "startDate": null,
+            "metadata": {
+                "createdDate": "2017-09-28T07:35:00Z",
+                "updatedDate": "2020-02-25T20:42:17Z"
+            },
+            "endDate": null,
+            "tags": [
+                "Entertainment",
+                "Performances",
+                "Central",
+                "Free admission",
+                "Outdoors",
+                "Families",
+                "Attractions",
+                "Galleries",
+                "Kids",
+                "Sunset",
+                "Wildlife",
+                "Bukit Timah",
+                "Adults",
+                "Group of People",
+                "Sightseeing",
+                "Parks and Gardens",
+                "Sports"
+            ],
+            "source": "stb",
+            "address": {
+                "block": "1",
+                "streetName": "Cluny Road",
+                "floorNumber": "",
+                "unitNumber": "",
+                "buildingName": "",
+                "postalCode": "259569"
+            },
+            "name": "Singapore Botanic Gardens",
+            "location": {
+                "latitude": 1.3138397,
+                "longitude": 103.8159136
+            }
+        },
+        {
+            "supportedLanguage": [
+                "EN"
+            ],
+            "rating": 0,
+            "uuid": "002c5963d367c624a0d8292e0675a6ef2c2",
+            "categoryDescription": "Attractions",
+            "formattedAddress": "",
+            "thumbnails": [
+                {
+                    "uuid": "1016bca976d7d604cdf93e5d1bec7fd2b7e",
+                    "libraryUuid": "104454a1f5a6c5248ee8a2ac2e6d27f173c",
+                    "url": "",
+                    "primaryFileMediumUuid": ""
+                }
+            ],
+            "images": [
+                {
+                    "uuid": "101ec824b5b1280400bb4ad641ef70382e5",
+                    "libraryUuid": "104454a1f5a6c5248ee8a2ac2e6d27f173c",
+                    "url": "",
+                    "primaryFileMediumUuid": ""
+                }
+            ],
+            "startDate": null,
+            "metadata": {
+                "createdDate": "2019-09-05T19:56:37Z",
+                "updatedDate": "2019-09-05T19:56:37Z"
+            },
+            "endDate": null,
+            "tags": [
+                "Festivals",
+                "Tourists",
+                "Little India",
+                "Shopping",
+                "Deepavali"
+            ],
+            "source": "Little India Shopkeepers and Heritage Association",
+            "address": {
+                "block": "",
+                "streetName": "Campbell Lane",
+                "floorNumber": "",
+                "unitNumber": "",
+                "buildingName": "",
+                "postalCode": "217963"
+            },
+            "name": "Deepavali Festival Village",
+            "location": {
+                "latitude": 1.305983,
+                "longitude": 103.851619
+            }
+        },
+        {
+            "supportedLanguage": [
+                "EN"
+            ],
+            "rating": 4.4,
+            "uuid": "002f2a65d430c1246699e6cf5352181496a",
+            "categoryDescription": "Attractions",
+            "formattedAddress": "",
+            "thumbnails": [
+                {
+                    "uuid": "1019cff66a1e368414f8cd71088e34c1924",
+                    "libraryUuid": "1045676ca2662ca4e06b05fb81d70405545",
+                    "url": "",
+                    "primaryFileMediumUuid": "1019cff66a1e368414f8cd71088e34c1924"
+                }
+            ],
+            "images": [
+                {
+                    "uuid": "101ce91ec35cfd240efbe291145e5949ed8",
+                    "libraryUuid": "1046aef701278164a26bc36f97bd5eacb6c",
+                    "url": "",
+                    "primaryFileMediumUuid": "101c9b329fd11be4d43861980a984cc3d02"
+                },
+                {
+                    "uuid": "101deff3b09c9f542a381d3f7c0b448b978",
+                    "libraryUuid": "104619e23d21bb14c80a17b775b75b05cdc",
+                    "url": "",
+                    "primaryFileMediumUuid": "10155ff319f46e140eea189e7ea45b52070"
+                },
+                {
+                    "uuid": "1019b15fd22521945258d1ea6b8746a8ef6",
+                    "libraryUuid": "104e42e6418e1fd4efa89e37074d73812ae",
+                    "url": "",
+                    "primaryFileMediumUuid": "1018f48b6896a4b4747a7a8a9200ede5088"
+                },
+                {
+                    "uuid": "1017cbd6d85cdc146f19d21f53a18f4f853",
+                    "libraryUuid": "104cac69e3416a841eeb4224b0a1bd76dae",
+                    "url": "",
+                    "primaryFileMediumUuid": "1010576dac283cf4aae92214758bbf71295"
+                },
+                {
+                    "uuid": "1016f642a0195e2477ebc8e571b3c80d7ab",
+                    "libraryUuid": "1045676ca2662ca4e06b05fb81d70405545",
+                    "url": "",
+                    "primaryFileMediumUuid": "1019cff66a1e368414f8cd71088e34c1924"
+                }
+            ],
+            "startDate": null,
+            "metadata": {
+                "createdDate": "2018-09-25T15:35:34Z",
+                "updatedDate": "2020-07-06T09:29:18Z"
+            },
+            "endDate": null,
+            "tags": [
+                "Family-friendly",
+                "Adventure",
+                "Kids-friendly",
+                "Conservation",
+                "Experiences",
+                "Outdoors",
+                "Families",
+                "Attractions",
+                "Half-Day",
+                "Kids",
+                "Animals",
+                "Wildlife",
+                "Fishes"
+            ],
+            "source": "SINGAPORE ZOOLOGICAL GARDENS",
+            "address": {
+                "block": "80",
+                "streetName": "Mandai Lake Road",
+                "floorNumber": "",
+                "unitNumber": "",
+                "buildingName": "",
+                "postalCode": "729826"
+            },
+            "name": "River Safari",
+            "location": {
+                "latitude": 1.4029491,
+                "longitude": 103.7917411
+            }
+        },
+        {
+            "supportedLanguage": [
+                "EN"
+            ],
+            "rating": 4.5,
+            "uuid": "002457d3c18e0f043418b05b0d0f985f902",
+            "categoryDescription": "Attractions",
+            "formattedAddress": "",
+            "thumbnails": [
+                {
+                    "uuid": "101cde39ac5f15840b0af48ad8ac223719a",
+                    "libraryUuid": "104f079bc304fd34a8a846a50298564ec14",
+                    "url": "",
+                    "primaryFileMediumUuid": "101cde39ac5f15840b0af48ad8ac223719a"
+                }
+            ],
+            "images": [
+                {
+                    "uuid": "1011a9b47a926e54bc1bfa92a045fed7768",
+                    "libraryUuid": "104f079bc304fd34a8a846a50298564ec14",
+                    "url": "",
+                    "primaryFileMediumUuid": "101cde39ac5f15840b0af48ad8ac223719a"
+                }
+            ],
+            "startDate": null,
+            "metadata": {
+                "createdDate": "2017-09-28T07:35:00Z",
+                "updatedDate": "2020-04-19T17:57:40Z"
+            },
+            "endDate": null,
+            "tags": [
+                "Indoors",
+                "Traditions",
+                "Little India",
+                "Indian",
+                "Central",
+                "Attractions",
+                "Galleries"
+            ],
+            "source": "stb",
+            "address": {
+                "block": "5",
+                "streetName": "Campbell Lane",
+                "floorNumber": "",
+                "unitNumber": "",
+                "buildingName": "",
+                "postalCode": "209924"
+            },
+            "name": "Indian Heritage Centre",
+            "location": {
+                "latitude": 1.3056813,
+                "longitude": 103.8522607
+            }
+        },
+        {
+            "supportedLanguage": [
+                "EN"
+            ],
+            "rating": 4.2,
+            "uuid": "002d9205d8e5f9447539e4a5d02d28816a0",
+            "categoryDescription": "Attractions",
+            "formattedAddress": "",
+            "thumbnails": [
+                {
+                    "uuid": "1011a948201ec8344d9a6f7877c58610373",
+                    "libraryUuid": "10407109837f78040f088d28f8323047654",
+                    "url": "",
+                    "primaryFileMediumUuid": "1011a948201ec8344d9a6f7877c58610373"
+                }
+            ],
+            "images": [
+                {
+                    "uuid": "101d9b8ba2d37b843a59bf98d3bfbda3fbe",
+                    "libraryUuid": "10407109837f78040f088d28f8323047654",
+                    "url": "",
+                    "primaryFileMediumUuid": "1011a948201ec8344d9a6f7877c58610373"
+                }
+            ],
+            "startDate": null,
+            "metadata": {
+                "createdDate": "2019-10-16T18:02:48Z",
+                "updatedDate": "2019-10-16T18:02:48Z"
+            },
+            "endDate": null,
+            "tags": [
+                "East Coast",
+                "Tourists",
+                "Action Seekers",
+                "Attractions"
+            ],
+            "source": "RUMAH BEBE PTE. LTD.",
+            "address": {
+                "block": "113",
+                "streetName": "113 East Coast Road",
+                "floorNumber": "",
+                "unitNumber": "113",
+                "buildingName": "Rumah Bebe",
+                "postalCode": "428803"
+            },
+            "name": "A Peranakan Experience",
+            "location": {
+                "latitude": 1.3075025,
+                "longitude": 103.8287331
+            }
+        },
+        {
+            "supportedLanguage": [
+                "EN"
+            ],
+            "rating": 0,
+            "uuid": "002c02f91b221ab459eb067b444b7f26e17",
+            "categoryDescription": "Attractions",
+            "formattedAddress": "",
+            "thumbnails": [
+                {
+                    "uuid": "101817fe90395fa487a97c40297df05c3c7",
+                    "libraryUuid": "10433fd38cf55214a6f869d4f94e6507f18",
+                    "url": "",
+                    "primaryFileMediumUuid": ""
+                }
+            ],
+            "images": [
+                {
+                    "uuid": "10112d44ae535074fac8560af1759467df5",
+                    "libraryUuid": "10433fd38cf55214a6f869d4f94e6507f18",
+                    "url": "",
+                    "primaryFileMediumUuid": ""
+                }
+            ],
+            "startDate": null,
+            "metadata": {
+                "createdDate": "2019-09-05T19:42:17Z",
+                "updatedDate": "2019-09-05T20:00:42Z"
+            },
+            "endDate": null,
+            "tags": [
+                "Festivals",
+                "Tourists",
+                "Lights",
+                "Deepavali"
+            ],
+            "source": "Little India Shopkeepers and Heritage Association",
+            "address": {
+                "block": "",
+                "streetName": "Serangoon Rd & Race Course Rd",
+                "floorNumber": "",
+                "unitNumber": "",
+                "buildingName": "",
+                "postalCode": "217959"
+            },
+            "name": "Grandeur Lights Of Deepavali",
+            "location": {
+                "latitude": 1.305302,
+                "longitude": 103.850928
+            }
+        },
+        {
+            "supportedLanguage": [
+                "EN"
+            ],
+            "rating": 4.7,
+            "uuid": "00239841ee105f44f96918acd25a798fcc1",
+            "categoryDescription": "Attractions",
+            "formattedAddress": "",
+            "thumbnails": [
+                {
+                    "uuid": "10706970cc5d197437ebff99c2bd6bca8b5",
+                    "libraryUuid": "1043e584129a59f44a0b248cc84c390d348",
+                    "url": "",
+                    "primaryFileMediumUuid": ""
+                }
+            ],
+            "images": [
+                {
+                    "uuid": "10114a883f7fa3a4456b4ee9fafd13d6062",
+                    "libraryUuid": "1043e584129a59f44a0b248cc84c390d348",
+                    "url": "",
+                    "primaryFileMediumUuid": ""
+                }
+            ],
+            "startDate": null,
+            "metadata": {
+                "createdDate": "2018-01-19T02:40:00Z",
+                "updatedDate": "2018-02-14T19:38:00Z"
+            },
+            "endDate": null,
+            "tags": [
+                "Attractions",
+                "Architecture",
+                "Free admission",
+                "South",
+                "Harbourfront",
+                "Indoors"
+            ],
+            "source": "stb",
+            "address": {
+                "block": "81",
+                "streetName": "King's Road",
+                "floorNumber": "",
+                "unitNumber": "",
+                "buildingName": "",
+                "postalCode": "266358"
+            },
+            "name": "International Baptist Church",
+            "location": {
+                "latitude": 1.317719,
+                "longitude": 103.806276
+            }
+        },
+        {
+            "supportedLanguage": [
+                "EN"
+            ],
+            "rating": 4.6,
+            "uuid": "002ceee321a7ff74eba8b3b2325cd1cf74b",
+            "categoryDescription": "Attractions",
+            "formattedAddress": "",
+            "thumbnails": [],
+            "images": [],
+            "startDate": null,
+            "metadata": {
+                "createdDate": "2020-03-18T19:40:05Z",
+                "updatedDate": "2020-03-23T05:04:39Z"
+            },
+            "endDate": null,
+            "tags": [
+                "History",
+                "Culture",
+                "Arts",
+                "Heritage"
+            ],
+            "source": "HALALTRIP PTE. LTD.",
+            "address": {
+                "block": "",
+                "streetName": "41 Dunlop Street",
+                "floorNumber": "",
+                "unitNumber": "",
+                "buildingName": "",
+                "postalCode": "209369"
+            },
+            "name": "Abdul Gafoor Mosque",
+            "location": {
+                "latitude": 1.304496,
+                "longitude": 103.85368
+            }
+        },
+        {
+            "supportedLanguage": [
+                "EN"
+            ],
+            "rating": 4.2,
+            "uuid": "002d701d403a9e64bb39163a464c8faff82",
+            "categoryDescription": "Attractions",
+            "formattedAddress": "",
+            "thumbnails": [
+                {
+                    "uuid": "1011080df201c7441b9b42a01f49739e0c3",
+                    "libraryUuid": "10455ce0f19d6e14daa96dd0ec0d96db775",
+                    "url": "",
+                    "primaryFileMediumUuid": "1011080df201c7441b9b42a01f49739e0c3"
+                }
+            ],
+            "images": [
+                {
+                    "uuid": "1013a3d1e5dbcea4d5ca9c1d0f26f220f05",
+                    "libraryUuid": "104f82fcd0814e04f9094433eb8a35ed148",
+                    "url": "",
+                    "primaryFileMediumUuid": "101d50069f7dac6412589fdd4f1be5393e1"
+                },
+                {
+                    "uuid": "1018f4159fe54124df68641e33e0d0852d0",
+                    "libraryUuid": "10455ce0f19d6e14daa96dd0ec0d96db775",
+                    "url": "",
+                    "primaryFileMediumUuid": "1011080df201c7441b9b42a01f49739e0c3"
+                },
+                {
+                    "uuid": "101ff74b4227e3b49079b8902fef537223a",
+                    "libraryUuid": "1043bce721ba0944fd88f0c8819355a3bbf",
+                    "url": "",
+                    "primaryFileMediumUuid": "1011cde97e1edad44a2b0542c7d79350247"
+                },
+                {
+                    "uuid": "1019b9397477a55449294164613511bcd1f",
+                    "libraryUuid": "104a972330446014708b055428eadb4f429",
+                    "url": "",
+                    "primaryFileMediumUuid": "1019998ab21764443c3a17d7af04ad1d928"
+                },
+                {
+                    "uuid": "101ff5d2b0ae6d84019945937055c0493aa",
+                    "libraryUuid": "104c8427143d83940f09a97dd3543555f6b",
+                    "url": "",
+                    "primaryFileMediumUuid": "1018f41c83684a442218ae7c321b8b8306b"
+                },
+                {
+                    "uuid": "101be580bb1b90c492ea287d9b53abaae5f",
+                    "libraryUuid": "10483c5689a2ae244779b2994e80d128bac",
+                    "url": "",
+                    "primaryFileMediumUuid": "1010da6ae34169541ee96a986e2756bb24f"
+                }
+            ],
+            "startDate": null,
+            "metadata": {
+                "createdDate": "2018-09-25T15:13:06Z",
+                "updatedDate": "2020-04-06T09:26:01Z"
+            },
+            "endDate": null,
+            "tags": [
+                "Nightlife",
+                "Animals",
+                "Night",
+                "Wildlife",
+                "Outdoors",
+                "Families",
+                "Attractions",
+                "Singapore Tourism Award"
+            ],
+            "source": "SINGAPORE ZOOLOGICAL GARDENS",
+            "address": {
+                "block": "80",
+                "streetName": "Mandai Lake Road",
+                "floorNumber": "",
+                "unitNumber": "",
+                "buildingName": "",
+                "postalCode": "729826"
+            },
+            "name": "Night Safari",
+            "location": {
+                "latitude": 1.4021872,
+                "longitude": 103.7880606
+            }
+        },
+        {
+            "supportedLanguage": [
+                "EN"
+            ],
+            "rating": 3.7,
+            "uuid": "00226235a4f04a44e079b4801b80f359679",
+            "categoryDescription": "Attractions",
+            "formattedAddress": "",
+            "thumbnails": [
+                {
+                    "uuid": "10135cb48cdeffb42c3bc25e668bf3bc757",
+                    "libraryUuid": "10405bf74580d0f49b68e5782f1920b4bc2",
+                    "url": "",
+                    "primaryFileMediumUuid": "10135cb48cdeffb42c3bc25e668bf3bc757"
+                }
+            ],
+            "images": [
+                {
+                    "uuid": "101654d818ba3e441a8980ee00f39739d1d",
+                    "libraryUuid": "10405bf74580d0f49b68e5782f1920b4bc2",
+                    "url": "",
+                    "primaryFileMediumUuid": "10135cb48cdeffb42c3bc25e668bf3bc757"
+                }
+            ],
+            "startDate": null,
+            "metadata": {
+                "createdDate": "2019-11-28T12:34:31Z",
+                "updatedDate": "2019-11-28T12:35:28Z"
+            },
+            "endDate": null,
+            "tags": [
+                "Activities",
+                "Local Foods",
+                "Hawker Food",
+                "Family-friendly",
+                "Adults",
+                "Workshops",
+                "Souvenirs",
+                "Arts",
+                "Social Events"
+            ],
+            "source": "Artsence@South Bridge Pte Ltd",
+            "address": {
+                "block": "29-B",
+                "streetName": "South Bridge Road",
+                "floorNumber": "03",
+                "unitNumber": "29B",
+                "buildingName": "",
+                "postalCode": "058665"
+            },
+            "name": "Singapore Food Makes Me Hungry",
+            "location": {
+                "latitude": 1.3040009,
+                "longitude": 103.8327312
+            }
+        }
+    ],
+    "poweredBy": "",
+    "nextToken": "MNXW2LTTORRC45DJNAXGG33SMUXG233EMVWC4UDMMFRWKUTFMZJWKYLSMNUFEZLTOVWHIJJXIMSTOQZRG4YCKN2DEU3UGMRQEU3UGJJXIMZDAJJXIMSTOQ3LMV4XO33SMQSTGRBFG5BSKN2DNRQXI2LUOVSGKJJTIQYS4MZWHEYTCNJFG5BSKN2DNRXW4Z3JOR2WIZJFGNCDCMBTFY4DINJUGM3CKN2DEU3UG4TBMRUXK4ZFGNCDKMBQGAYCKN2DEU3UG43UMFZHIRDBORSSKM2EEU3UGJJXINSW4ZCEMF2GKJJTIQSTOQZFG5BXG33SOQSTGRDENFZXIYLOMNSSKN2DEU3UG3DBNZTXKYLHMUSTGRBFG5BSKN2DMRUXG5DJNZRXIJJTIRMWK4ZFG5BSKN2DONXWY4SOMFWWK43QMFRWK4ZFGNCGIYROMF2HI4TBMN2GS33OEU3UGJJXIM======"
+}

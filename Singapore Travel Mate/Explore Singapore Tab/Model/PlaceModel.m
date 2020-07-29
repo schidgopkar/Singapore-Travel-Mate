@@ -23,6 +23,17 @@
     self = [super init];
     if (self) {
         _serviceController = [[ServiceController alloc]init];
+        
+        NSDictionary *keys;
+        
+        NSString *path = [[NSBundle mainBundle] pathForResource:@"APIKeys" ofType:@"plist"];
+        
+        keys = [NSDictionary dictionaryWithContentsOfFile:path];
+        
+        NSString *singaporeTourismBoardAPIKey = [keys objectForKey:@"singaporeTourismBoardAPIKey"];
+        
+        _apiKey = singaporeTourismBoardAPIKey;
+        
     }
     return self;
 }
@@ -31,9 +42,7 @@
     
     _places = [[NSMutableArray alloc]init];
     
-    _apiKey = @"mkFeYP700IB5kG2t9eNbqLpTLoaM3mZ4";
-    
-    NSString *urlString = [NSString stringWithFormat:@"https://tih-api.stb.gov.sg/map/v1/search/multidataset?location=%@&apikey=%@&radius=%@&distinct=Yes",location, _apiKey, radius];
+    NSString *urlString = [NSString stringWithFormat:@"https://tih-api.stb.gov.sg/map/v1/search/multidataset?location=%@&apikey=%@&radius=%@&dataset=attractions&distinct=Yes",location, _apiKey, radius];
     
     NSLog(@"%@", urlString);
     

@@ -14,6 +14,10 @@
 		475B051E24CA0E2500B7F5A5 /* PlaceModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 475B051D24CA0E2500B7F5A5 /* PlaceModel.m */; };
 		475B052124CA1AFE00B7F5A5 /* ExploreSingaporeViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 475B052024CA1AFE00B7F5A5 /* ExploreSingaporeViewModel.m */; };
 		4778A96924D05EA3007F6EDA /* MockServiceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4778A96824D05EA3007F6EDA /* MockServiceController.m */; };
+		4778A96C24D061C2007F6EDA /* validPlacesList.json in Resources */ = {isa = PBXBuildFile; fileRef = 4778A96B24D061C2007F6EDA /* validPlacesList.json */; };
+		4778A96E24D0622B007F6EDA /* ExploreSingaporeViewModelTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4778A96D24D0622B007F6EDA /* ExploreSingaporeViewModelTests.m */; };
+		4778A97124D06763007F6EDA /* MockExploreSingaporeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4778A97024D06763007F6EDA /* MockExploreSingaporeViewController.m */; };
+		4778A97524D15A92007F6EDA /* APIKeys.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4778A97424D15A91007F6EDA /* APIKeys.plist */; };
 		479A5A0124CF0AD5003B84AC /* MockNSURLSession.m in Sources */ = {isa = PBXBuildFile; fileRef = 479A5A0024CF0AD5003B84AC /* MockNSURLSession.m */; };
 		479A5A0424CF0E9D003B84AC /* MockNSURLSessionDataTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 479A5A0324CF0E9D003B84AC /* MockNSURLSessionDataTask.m */; };
 		479C603824CBB81200B75F95 /* style.json in Resources */ = {isa = PBXBuildFile; fileRef = 479C603724CBB81100B75F95 /* style.json */; };
@@ -63,6 +67,11 @@
 		475B052224CA1B4F00B7F5A5 /* ExploreSingaporeViewControllerProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ExploreSingaporeViewControllerProtocol.h; sourceTree = "<group>"; };
 		4778A96724D05EA3007F6EDA /* MockServiceController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MockServiceController.h; sourceTree = "<group>"; };
 		4778A96824D05EA3007F6EDA /* MockServiceController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MockServiceController.m; sourceTree = "<group>"; };
+		4778A96B24D061C2007F6EDA /* validPlacesList.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = validPlacesList.json; sourceTree = "<group>"; };
+		4778A96D24D0622B007F6EDA /* ExploreSingaporeViewModelTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExploreSingaporeViewModelTests.m; sourceTree = "<group>"; };
+		4778A96F24D06763007F6EDA /* MockExploreSingaporeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MockExploreSingaporeViewController.h; sourceTree = "<group>"; };
+		4778A97024D06763007F6EDA /* MockExploreSingaporeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MockExploreSingaporeViewController.m; sourceTree = "<group>"; };
+		4778A97424D15A91007F6EDA /* APIKeys.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = APIKeys.plist; sourceTree = "<group>"; };
 		479A59FF24CF0AD5003B84AC /* MockNSURLSession.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MockNSURLSession.h; sourceTree = "<group>"; };
 		479A5A0024CF0AD5003B84AC /* MockNSURLSession.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MockNSURLSession.m; sourceTree = "<group>"; };
 		479A5A0224CF0E9D003B84AC /* MockNSURLSessionDataTask.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MockNSURLSessionDataTask.h; sourceTree = "<group>"; };
@@ -212,6 +221,14 @@
 			path = Protocols;
 			sourceTree = "<group>";
 		};
+		4778A96A24D0618E007F6EDA /* TestData */ = {
+			isa = PBXGroup;
+			children = (
+				4778A96B24D061C2007F6EDA /* validPlacesList.json */,
+			);
+			path = TestData;
+			sourceTree = "<group>";
+		};
 		479A59FE24CF0A9B003B84AC /* Mocks */ = {
 			isa = PBXGroup;
 			children = (
@@ -221,6 +238,8 @@
 				479A5A0324CF0E9D003B84AC /* MockNSURLSessionDataTask.m */,
 				4778A96724D05EA3007F6EDA /* MockServiceController.h */,
 				4778A96824D05EA3007F6EDA /* MockServiceController.m */,
+				4778A96F24D06763007F6EDA /* MockExploreSingaporeViewController.h */,
+				4778A97024D06763007F6EDA /* MockExploreSingaporeViewController.m */,
 			);
 			path = Mocks;
 			sourceTree = "<group>";
@@ -263,6 +282,7 @@
 				4716CDFB24C9BC1500B894D1 /* ServiceController.h */,
 				4716CDFC24C9BC1500B894D1 /* ServiceController.m */,
 				479C603724CBB81100B75F95 /* style.json */,
+				4778A97424D15A91007F6EDA /* APIKeys.plist */,
 			);
 			path = "Singapore Travel Mate";
 			sourceTree = "<group>";
@@ -270,10 +290,12 @@
 		47CFB58424B9F0A7000F20FF /* Singapore Travel MateTests */ = {
 			isa = PBXGroup;
 			children = (
+				4778A96A24D0618E007F6EDA /* TestData */,
 				479A59FE24CF0A9B003B84AC /* Mocks */,
 				47CFB58524B9F0A7000F20FF /* Singapore_Travel_MateTests.m */,
 				47CFB58724B9F0A7000F20FF /* Info.plist */,
 				471B9C1324CEF12000CB141F /* ServiceControllerTests.m */,
+				4778A96D24D0622B007F6EDA /* ExploreSingaporeViewModelTests.m */,
 			);
 			path = "Singapore Travel MateTests";
 			sourceTree = "<group>";
@@ -398,6 +420,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				47CFB57924B9F0A5000F20FF /* LaunchScreen.storyboard in Resources */,
+				4778A97524D15A92007F6EDA /* APIKeys.plist in Resources */,
 				47CFB57624B9F0A5000F20FF /* Assets.xcassets in Resources */,
 				47CFB57424B9F09D000F20FF /* Main.storyboard in Resources */,
 				479C603824CBB81200B75F95 /* style.json in Resources */,
@@ -408,6 +431,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4778A96C24D061C2007F6EDA /* validPlacesList.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -584,7 +608,9 @@
 				479A5A0424CF0E9D003B84AC /* MockNSURLSessionDataTask.m in Sources */,
 				47CFB58624B9F0A7000F20FF /* Singapore_Travel_MateTests.m in Sources */,
 				479A5A0124CF0AD5003B84AC /* MockNSURLSession.m in Sources */,
+				4778A96E24D0622B007F6EDA /* ExploreSingaporeViewModelTests.m in Sources */,
 				471B9C1424CEF12000CB141F /* ServiceControllerTests.m in Sources */,
+				4778A97124D06763007F6EDA /* MockExploreSingaporeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

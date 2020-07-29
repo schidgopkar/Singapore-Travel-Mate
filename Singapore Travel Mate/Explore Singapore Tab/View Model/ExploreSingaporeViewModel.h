@@ -14,7 +14,7 @@
 #import "PlaceTableViewCellViewModel.h"
 
 
-@interface ExploreSingaporeViewModel : NSObject
+@interface ExploreSingaporeViewModel : NSObject <PlaceModelProtocol>
 
 @property(nonatomic, weak) id <ExploreSingaporeViewControllerProtocol> view;
 @property(nonatomic, strong) PlaceModel *placeModel;

@@ -10,4 +10,11 @@
 
 @implementation MockServiceController
 
+
+- (void)fetchFromUrl:(NSString *)urlString withCompletion:(void (^)(NSData *, NSError *))comletionHandler{
+    
+    comletionHandler(_dataToReturnOnSuccess, nil);
+    
+}
+
 @end
